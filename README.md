@@ -6,3 +6,6 @@ Module that uses inverse and forward kinematics to obtain angles and trajectorie
 Qamar Syed: 119128824,
 Tanmay Haldankar: 119175460,
 Sanchit Kedia: 119159620
+
+## Proposal Video
+https://drive.google.com/file/d/1DN1yFC1ftZCqTR0bdwy7rqwPNF0FwN4z/view?usp=sharing
