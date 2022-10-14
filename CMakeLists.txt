@@ -10,7 +10,7 @@ option(COVERAGE "Generate Coverage Data" OFF)
 if (COVERAGE)
     include(CodeCoverage)
     set(LCOV_REMOVE_EXTRA "'*vendor/*'")
-    setup_target_for_coverage(code_coverage test/code_test coverage)
+    #setup_target_for_coverage(code_coverage test/code_test coverage)
     #set(COVERAGE_SRCS include/robot_parameters.hpp include/inverse_kinematics.hpp include/forward_kinematics.hpp app/main.cpp app/robot_parameters.cpp app/inverse_kinematics.cpp app/forward_kinematics.cpp)
 
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
