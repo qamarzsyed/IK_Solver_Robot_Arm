@@ -1,6 +1,6 @@
 # 6 DOF Manipulator - Inverse Kinematics Solver
 
-[![Build Status](https://github.com/qamarzsyed/IK_Solver_Robot_Arm/actions/workflows/cmake.yml/badge.svg)
+![Build Status](https://github.com/qamarzsyed/IK_Solver_Robot_Arm/actions/workflows/cmake.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/qamarzsyed/IK_Solver_Robot_Arm/badge.svg?branch=main)](https://coveralls.io/github/qamarzsyed/IK_Solver_Robot_Arm?branch=main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
