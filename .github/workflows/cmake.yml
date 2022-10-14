@@ -1,6 +1,6 @@
 name: CMake_CI_CD
 
-on push
+on: push
 
 jobs:
   build:
