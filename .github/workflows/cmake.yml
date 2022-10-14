@@ -1,6 +1,6 @@
-name: CMake_CI_CD
+name: Build Status
 
-on push
+on: push
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
 
     - name: Compile using Cmake
       run: |
-        export CXX=$COMPILER;
+        export CXX=g++-9
         mkdir build
         cd build
         cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../
