@@ -24,6 +24,8 @@ jobs:
         make
         make code_coverage
         test/code_test
-        coveralls --service=github
+        
+    - name: Generate coveralls file
+      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E".*vendor/"
     env:  
         github-token: ${{ secrets.GITHUB_TOKEN }}
