@@ -9,6 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Before Install
+      run: pip install --user cpp-coveralls 
+    
     - name: Install
       run: sudo apt-get install -y -qq lcov
     
@@ -21,8 +24,5 @@ jobs:
         make
         make code_coverage
 
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov : ${{github.workspace}}/build/coverage.info.cleaned
+    - name: Generate coveralls file
+      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/*" -E ".*include/Eigen*" --gcov-options '\-lp' -t rwLydlp7bCI3dUI8zi1w7inoBqGrI3tFt
