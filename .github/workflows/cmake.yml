@@ -16,12 +16,13 @@ jobs:
       run: sudo apt-get install -y -qq lcov
 
     - name: Compile using Cmake
-      working-directory: ${{github.workspace}}/build
       run: |
+        export CXX=g++-9
+        mkdir build
+        cd build
         cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../
         make
         make code_coverage
-      
 
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@1.1.3
