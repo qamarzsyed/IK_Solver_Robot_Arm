@@ -18,7 +18,6 @@ jobs:
     - name: Compile using Cmake
       working-directory: ${{github.workspace}}/build
       run: |
-        export CXX=g++-9
         cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../
         make
         make code_coverage
