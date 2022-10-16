@@ -24,9 +24,6 @@ jobs:
         make
         make code_coverage
         test/code_test
-      
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@1.1.3
-      with:
+        coveralls --service=github
+    env:  
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov : /home/runner/work/IK_Solver_Robot_Arm/IK_Solver_Robot_Arm/build/coverage.info
