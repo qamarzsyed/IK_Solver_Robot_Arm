@@ -25,4 +25,4 @@ jobs:
         make code_coverage
 
     - name: Generate coveralls file
-      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/*" -E ".*include/Eigen*" --gcov-options '\-lp' -v -t rwLydlp7bCI3dUI8zi1w7inoBqGrI3tFt
+      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/*" -E ".*include/Eigen*" --gcov-options '\-lp' --verbose -t rwLydlp7bCI3dUI8zi1w7inoBqGrI3tFt
