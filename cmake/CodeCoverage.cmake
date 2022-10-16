@@ -160,11 +160,11 @@ FUNCTION(SETUP_TARGET_FOR_COVERAGE _targetname _testrunner _outputname)
 		COMMENT "Resetting code coverage counters to zero.\nProcessing code coverage counters and generating report."
 	)
 
-	# Show info where to find the report
-	#ADD_CUSTOM_COMMAND(TARGET ${_targetname} POST_BUILD
-		#COMMAND ;
-		#COMMENT "Open ./${_outputname}/index.html in your browser to view the coverage report."
-	#)
+	Show info where to find the report
+	ADD_CUSTOM_COMMAND(TARGET ${_targetname} POST_BUILD
+		COMMAND ;
+		COMMENT "Open ./${_outputname}/index.html in your browser to view the coverage report."
+	)
 
 ENDFUNCTION() # SETUP_TARGET_FOR_COVERAGE
 
