@@ -26,6 +26,6 @@ jobs:
         test/code_test
         
     - name: Generate coveralls file
-      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E".*vendor/"
-    env:  
+      run: coveralls -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E".*vendor/"
+      env:  
         repo_token: iL0KsC5KmT4QDXQvQBEzi96WnqSImO5sQ
