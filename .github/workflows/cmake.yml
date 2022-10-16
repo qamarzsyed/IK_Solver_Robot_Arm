@@ -28,4 +28,4 @@ jobs:
     - name: Generate coveralls file
       run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E".*vendor/"
     env:  
-        github-token:  ${{ github.token }}
+        repo_token: iL0KsC5KmT4QDXQvQBEzi96WnqSImO5sQ
