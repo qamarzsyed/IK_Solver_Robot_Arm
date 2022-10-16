@@ -11,19 +11,29 @@
 #include <gtest/gtest.h>
 #include "../include/robot_parameters.hpp"
 
+/**
+ * @brief Construct a new TEST to check if the robot angles vector is empty
+ * 
+ */
 TEST(Robot_Parameters, CheckAngles) {
     RobotParameters r1;
     std::vector<double> angles = r1.get_robot_angles();
     bool empty = angles.empty();
     EXPECT_FALSE(empty);
 }
-
+/**
+ * @brief Construct a new TEST to check the size of the DH Parameters matrix
+ * 
+ */
 TEST(Robot_Parameters, CheckDH) {
     RobotParameters r1;
     Eigen::MatrixXd DH = r1.get_dh_parameters();
     EXPECT_EQ(DH.size(), 24);
 }
-
+/**
+ * @brief Construct a new TEST to check if the robot angles are being set correctly
+ * 
+ */
 TEST(Robot_Parameters, CheckSetAngles) {
     RobotParameters r1;
     std::vector<double> angles = {0, 0, 0, 0, 0, 0};

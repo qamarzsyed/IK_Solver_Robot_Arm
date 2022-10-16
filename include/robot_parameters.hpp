@@ -14,7 +14,10 @@
 #include <vector>
 #include <string>
 #include "Eigen/Dense"
-
+/**
+ * @brief Definition of the Robot Parameter Class
+ * 
+ */
 class RobotParameters {
  private:
     std::vector<double> _dh_alpha;
@@ -22,10 +25,29 @@ class RobotParameters {
     std::vector<double> _dh_d;
     std::vector<double> _robot_angles;
  public:
+   /**
+    * @brief Construct a new Robot Parameters object to assign default values
+    * 
+    */
     RobotParameters();
     std::string robot_name;
+    /**
+     * @brief Compute the dh parameters matrix
+     * 
+     * @return Eigen::MatrixXd  Returns DH matrix
+     */
     Eigen::MatrixXd get_dh_parameters();
+    /**
+     * @brief Gets the robot angles
+     * 
+     * @return std::vector<double>  Returns the robot angles
+     */
     std::vector<double> get_robot_angles();
+    /**
+     * @brief Sets the robot angles 
+     * 
+     * @param robot_angles Sets the robot angles from the ik solver output
+     */
     void set_robot_angles(std::vector<double> robot_angles);
 };
 

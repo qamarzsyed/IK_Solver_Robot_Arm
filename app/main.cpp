@@ -14,7 +14,11 @@
 using std::cout;
 using std::endl;
 
-
+/**
+ * @brief Main Function 
+ * 
+ * @return int 0
+ */
 int main() {
     RobotParameters r1;
     cout << "The Robot for the project is " << r1.robot_name << endl;
