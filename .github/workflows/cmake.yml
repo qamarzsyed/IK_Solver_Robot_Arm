@@ -24,8 +24,6 @@ jobs:
         make
         make code_coverage
         test/code_test
-             
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@1.1.3
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Generate coveralls file
+      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/*" -E ".*include/Eigen/*" -t iL0KsC5KmT4QDXQvQBEzi96WnqSImO5sQ
