@@ -28,5 +28,5 @@ jobs:
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@1.1.3
       with:
+        path-to-lcov: ${{ github.workspace }}/build/coverage.info.cleaned
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov : /home/runner/work/IK_Solver_Robot_Arm/IK_Solver_Robot_Arm/coverage.info
