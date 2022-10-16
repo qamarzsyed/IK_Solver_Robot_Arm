@@ -26,4 +26,4 @@ jobs:
         test/code_test
         
     - name: Generate coveralls file
-      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/*" -E ".*include/Eigen/*" -t iL0KsC5KmT4QDXQvQBEzi96WnqSImO5sQ
+      run: coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp" -E ".*vendor/" -E ".*include/Eigen/" -t rwLydlp7bCI3dUI8zi1w7inoBqGrI3tFt
