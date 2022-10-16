@@ -8,13 +8,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Before Install
-      run: pip install coveralls 
-
-    - name: Install
-      run: sudo apt-get install -y -qq lcov
-
+    
     - name: Compile using Cmake
       run: |
         export CXX=g++-9
