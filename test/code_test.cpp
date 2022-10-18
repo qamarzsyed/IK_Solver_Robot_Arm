@@ -10,7 +10,7 @@
 
 #include <gtest/gtest.h>
 #include "../include/robot_parameters.hpp"
-
+#include "../include/forward_kinematics.hpp"
 /**
  * @brief Construct a new TEST to check if the robot angles vector is empty
  * 
@@ -40,4 +40,17 @@ TEST(Robot_Parameters, CheckSetAngles) {
     r1.set_robot_angles(angles);
     std::vector<double> angles_o = r1.get_robot_angles();
     EXPECT_EQ(angles, angles_o);
+}
+
+TEST(Forward_Kinematics, check_calculateTF) {
+    ForwardKinematics k1;
+    Eigen::Matrix<double, 4, 4> TF = k1.calculate_TF(1);
+    std::cout << TF; 
+    EXPECT_EQ(TF.size(), 16);
+}
+
+TEST(Forward_Kinematics, check_solvefk) {
+    ForwardKinematics k1;
+    Eigen::Matrix<double, 4, 4> HTF = k1.solve_fk();
+    EXPECT_EQ(HTF.size(), 16);
 }

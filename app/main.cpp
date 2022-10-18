@@ -10,6 +10,7 @@
 #include <iostream>
 
 #include "../include/robot_parameters.hpp"
+#include "../include/forward_kinematics.hpp"
 
 using std::cout;
 using std::endl;
@@ -21,7 +22,10 @@ using std::endl;
  */
 int main() {
     RobotParameters r1;
+    ForwardKinematics k1;
     cout << "The Robot for the project is " << r1.robot_name << endl;
     cout << "The DH parameters are : \n " << r1.get_dh_parameters() << endl;
+    cout << "The Transformation Matrix is " << k1.calculate_TF(1);
+    cout << "The Transformation Matrix is " << k1.solve_fk();
     return 0;
 }
