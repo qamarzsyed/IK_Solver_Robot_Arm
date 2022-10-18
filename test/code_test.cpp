@@ -41,14 +41,19 @@ TEST(Robot_Parameters, CheckSetAngles) {
     std::vector<double> angles_o = r1.get_robot_angles();
     EXPECT_EQ(angles, angles_o);
 }
-
+/**
+ * @brief Construct a new TEST to check the size of the DH transformation matrix
+ * 
+ */
 TEST(Forward_Kinematics, check_calculateTF) {
     ForwardKinematics k1;
     Eigen::Matrix<double, 4, 4> TF = k1.calculate_TF(1);
-    std::cout << TF; 
     EXPECT_EQ(TF.size(), 16);
 }
-
+/**
+ * @brief Construct a new TEST to check the size of final homogeneous transformation matrix
+ * 
+ */
 TEST(Forward_Kinematics, check_solvefk) {
     ForwardKinematics k1;
     Eigen::Matrix<double, 4, 4> HTF = k1.solve_fk();
