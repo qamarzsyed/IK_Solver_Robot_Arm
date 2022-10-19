@@ -1,0 +1,73 @@
+\begin{theindex}
+
+  \item {add\_executable}
+    \subitem {CMakeLists.txt}, \hyperpage{13}
+  \item {app/CMakeLists.txt}, \hyperpage{13}
+  \item {app/forward\_kinematics.cpp}, \hyperpage{14}
+  \item {app/main.cpp}, \hyperpage{15}
+  \item {app/robot\_parameters.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {calculate\_TF}
+    \subitem {ForwardKinematics}, \hyperpage{8}
+  \item {CMakeLists.txt}
+    \subitem {add\_executable}, \hyperpage{13}
+    \subitem {set}, \hyperpage{13}
+  \item {code\_test.cpp}
+    \subitem {TEST}, \hyperpage{21, 22}
+
+  \indexspace
+
+  \item {ForwardKinematics}, \hyperpage{7}
+    \subitem {calculate\_TF}, \hyperpage{8}
+    \subitem {solve\_fk}, \hyperpage{8}
+
+  \indexspace
+
+  \item {get\_dh\_parameters}
+    \subitem {RobotParameters}, \hyperpage{10}
+  \item {get\_robot\_angles}
+    \subitem {RobotParameters}, \hyperpage{10}
+
+  \indexspace
+
+  \item {include/forward\_kinematics.hpp}, \hyperpage{18}
+  \item {include/robot\_parameters.hpp}, \hyperpage{19}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{16, 17}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item {robot\_name}
+    \subitem {RobotParameters}, \hyperpage{11}
+  \item {RobotParameters}, \hyperpage{9}
+    \subitem {get\_dh\_parameters}, \hyperpage{10}
+    \subitem {get\_robot\_angles}, \hyperpage{10}
+    \subitem {robot\_name}, \hyperpage{11}
+    \subitem {RobotParameters}, \hyperpage{9}
+    \subitem {set\_robot\_angles}, \hyperpage{10}
+
+  \indexspace
+
+  \item {set}
+    \subitem {CMakeLists.txt}, \hyperpage{13}
+  \item {set\_robot\_angles}
+    \subitem {RobotParameters}, \hyperpage{10}
+  \item {solve\_fk}
+    \subitem {ForwardKinematics}, \hyperpage{8}
+
+  \indexspace
+
+  \item {TEST}
+    \subitem {code\_test.cpp}, \hyperpage{21, 22}
+  \item {test/CMakeLists.txt}, \hyperpage{13}
+  \item {test/code\_test.cpp}, \hyperpage{20}
+  \item {test/main.cpp}, \hyperpage{16}
+
+\end{theindex}

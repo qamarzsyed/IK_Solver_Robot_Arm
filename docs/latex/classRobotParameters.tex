@@ -1,0 +1,113 @@
+\hypertarget{classRobotParameters}{}\doxysection{Robot\+Parameters Class Reference}
+\label{classRobotParameters}\index{RobotParameters@{RobotParameters}}
+
+
+Definition of the Robot Parameter Class.  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+parameters.\+hpp$>$}
+
+
+
+Inheritance diagram for Robot\+Parameters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classRobotParameters__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRobotParameters_a24ae817bbfa7ea775c027aeb4817cfa3}{Robot\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Robot Parameters object to assign default values. \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix\+Xd \mbox{\hyperlink{classRobotParameters_a1de2462c0d8608c61cb28620cd52fdb6}{get\+\_\+dh\+\_\+parameters}} ()
+\begin{DoxyCompactList}\small\item\em Compute the dh parameters matrix. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classRobotParameters_abb23a98c3b54b0cf00c6ced44991e631}{get\+\_\+robot\+\_\+angles}} ()
+\begin{DoxyCompactList}\small\item\em Gets the robot angles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotParameters_a4dc006415a0527455a87716579aac758}{set\+\_\+robot\+\_\+angles}} (std\+::vector$<$ double $>$ robot\+\_\+angles)
+\begin{DoxyCompactList}\small\item\em Sets the robot angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classRobotParameters_ab4f065ddcad9119687a679343c2d214c}{robot\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the Robot Parameter Class. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRobotParameters_a24ae817bbfa7ea775c027aeb4817cfa3}\label{classRobotParameters_a24ae817bbfa7ea775c027aeb4817cfa3}} 
+\index{RobotParameters@{RobotParameters}!RobotParameters@{RobotParameters}}
+\index{RobotParameters@{RobotParameters}!RobotParameters@{RobotParameters}}
+\doxysubsubsection{\texorpdfstring{RobotParameters()}{RobotParameters()}}
+{\footnotesize\ttfamily Robot\+Parameters\+::\+Robot\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Robot Parameters object to assign default values. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobotParameters_a1de2462c0d8608c61cb28620cd52fdb6}\label{classRobotParameters_a1de2462c0d8608c61cb28620cd52fdb6}} 
+\index{RobotParameters@{RobotParameters}!get\_dh\_parameters@{get\_dh\_parameters}}
+\index{get\_dh\_parameters@{get\_dh\_parameters}!RobotParameters@{RobotParameters}}
+\doxysubsubsection{\texorpdfstring{get\_dh\_parameters()}{get\_dh\_parameters()}}
+{\footnotesize\ttfamily Matrix\+Xd Robot\+Parameters\+::get\+\_\+dh\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Compute the dh parameters matrix. 
+
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix\+Xd Returns DH matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobotParameters_abb23a98c3b54b0cf00c6ced44991e631}\label{classRobotParameters_abb23a98c3b54b0cf00c6ced44991e631}} 
+\index{RobotParameters@{RobotParameters}!get\_robot\_angles@{get\_robot\_angles}}
+\index{get\_robot\_angles@{get\_robot\_angles}!RobotParameters@{RobotParameters}}
+\doxysubsubsection{\texorpdfstring{get\_robot\_angles()}{get\_robot\_angles()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Robot\+Parameters\+::get\+\_\+robot\+\_\+angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the robot angles. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ Returns the robot angles 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobotParameters_a4dc006415a0527455a87716579aac758}\label{classRobotParameters_a4dc006415a0527455a87716579aac758}} 
+\index{RobotParameters@{RobotParameters}!set\_robot\_angles@{set\_robot\_angles}}
+\index{set\_robot\_angles@{set\_robot\_angles}!RobotParameters@{RobotParameters}}
+\doxysubsubsection{\texorpdfstring{set\_robot\_angles()}{set\_robot\_angles()}}
+{\footnotesize\ttfamily void Robot\+Parameters\+::set\+\_\+robot\+\_\+angles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{robot\+\_\+angles }\end{DoxyParamCaption})}
+
+
+
+Sets the robot angles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+\_\+angles} & Sets the robot angles from the ik solver output \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRobotParameters_ab4f065ddcad9119687a679343c2d214c}\label{classRobotParameters_ab4f065ddcad9119687a679343c2d214c}} 
+\index{RobotParameters@{RobotParameters}!robot\_name@{robot\_name}}
+\index{robot\_name@{robot\_name}!RobotParameters@{RobotParameters}}
+\doxysubsubsection{\texorpdfstring{robot\_name}{robot\_name}}
+{\footnotesize\ttfamily std\+::string Robot\+Parameters\+::robot\+\_\+name}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{robot__parameters_8hpp}{robot\+\_\+parameters.\+hpp}}\item 
+app/\mbox{\hyperlink{robot__parameters_8cpp}{robot\+\_\+parameters.\+cpp}}\end{DoxyCompactItemize}
