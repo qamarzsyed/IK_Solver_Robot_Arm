@@ -1,0 +1,82 @@
+\hypertarget{classForwardKinematics}{}\doxysection{Forward\+Kinematics Class Reference}
+\label{classForwardKinematics}\index{ForwardKinematics@{ForwardKinematics}}
+
+
+Definition of the Forward Kinematics Class.  
+
+
+
+
+{\ttfamily \#include $<$forward\+\_\+kinematics.\+hpp$>$}
+
+
+
+Inheritance diagram for Forward\+Kinematics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classForwardKinematics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Forward\+Kinematics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classForwardKinematics__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \mbox{\hyperlink{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}{calculate\+\_\+\+TF}} (int i)
+\begin{DoxyCompactList}\small\item\em Calculate the DH transfromation matrix for each joint pair. \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \mbox{\hyperlink{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}{solve\+\_\+fk}} ()
+\begin{DoxyCompactList}\small\item\em Solve the forward kinematics for manipulator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Definition of the Forward Kinematics Class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}\label{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}} 
+\index{ForwardKinematics@{ForwardKinematics}!calculate\_TF@{calculate\_TF}}
+\index{calculate\_TF@{calculate\_TF}!ForwardKinematics@{ForwardKinematics}}
+\doxysubsubsection{\texorpdfstring{calculate\_TF()}{calculate\_TF()}}
+{\footnotesize\ttfamily Matrix$<$ double, 4, 4 $>$ Forward\+Kinematics\+::calculate\+\_\+\+TF (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Calculate the DH transfromation matrix for each joint pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & integer value denoting the row of \+\_\+dh\+\_\+matrix to be considered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$double, 4, 4$>$ Returns the transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}\label{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}} 
+\index{ForwardKinematics@{ForwardKinematics}!solve\_fk@{solve\_fk}}
+\index{solve\_fk@{solve\_fk}!ForwardKinematics@{ForwardKinematics}}
+\doxysubsubsection{\texorpdfstring{solve\_fk()}{solve\_fk()}}
+{\footnotesize\ttfamily Matrix$<$ double, 4, 4 $>$ Forward\+Kinematics\+::solve\+\_\+fk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Solve the forward kinematics for manipulator. 
+
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$double, 4, 4$>$ Returns the final Homogeneous transformation matrix 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{forward__kinematics_8hpp}{forward\+\_\+kinematics.\+hpp}}\item 
+app/\mbox{\hyperlink{forward__kinematics_8cpp}{forward\+\_\+kinematics.\+cpp}}\end{DoxyCompactItemize}

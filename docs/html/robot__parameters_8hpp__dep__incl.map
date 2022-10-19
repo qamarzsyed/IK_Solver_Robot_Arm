@@ -1,0 +1,8 @@
+<map id="include/robot_parameters.hpp" name="include/robot_parameters.hpp">
+<area shape="rect" id="node1" title="Definition of Robot Parameters class and Declaration of its Methods." alt="" coords="300,5,517,32"/>
+<area shape="rect" id="node2" href="$forward__kinematics_8hpp.html" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="176,80,407,107"/>
+<area shape="rect" id="node6" href="$robot__parameters_8cpp.html" title="Program to define the Methods of Robot Parameters Class." alt="" coords="431,80,624,107"/>
+<area shape="rect" id="node3" href="$forward__kinematics_8cpp.html" title="Program to define the Methods of Forward Kinematics Class." alt="" coords="5,155,212,181"/>
+<area shape="rect" id="node4" href="$app_2main_8cpp.html" title="Program to execute the inverse kinematics and forward kinematics." alt="" coords="236,155,347,181"/>
+<area shape="rect" id="node5" href="$code__test_8cpp.html" title="Program to perform unit testing." alt="" coords="371,155,513,181"/>
+</map>
