@@ -29,6 +29,11 @@
 
 ## Submission
 - Project Proposal Video : https://drive.google.com/file/d/1DN1yFC1ftZCqTR0bdwy7rqwPNF0FwN4z/view?usp=sharing
+- Project Phase 1 Video : https://drive.google.com/file/d/1aRyd8k2F9J4Gdd8d-0GsCtbD0NMbCdna/view?usp=sharing
+
+## Dependencies
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) :The project includes the Eigen library for linear algebra operations.
+
 
 ## Compilation
 ```
@@ -52,3 +57,43 @@ make code_coverage
 
 1. Once inside the `/build` directory after compilation, run: `./app/ik_solver`
 2. To perform Google Test, run:  `./test/code_test`
+
+## Cpplint
+
+Change to the `/app` directory, and run:
+```
+cpplint main.cpp > ../results/cpplint_main.txt
+cpplint forward_kinematics.cpp > ../results/cpplint_forward_kinematics.txt
+cpplint robot_parameters.cpp > ../results/cpplint_robot_parameters.txt
+cpplint ../test/code_test.cpp > ../results/cpplint_code_test.txt
+cpplint ../include/forward_kinematics.hpp > ../results/cpplint_forward_kinematics_hpp.txt
+cpplint ../include/robot_parameters.hpp > ../results/cpplint_robot_parameters_hpp.txt
+```
+
+## Cppcheck
+
+Change to the `root` directory, and run:
+```
+cppcheck --enable=all --std=c++11 --force -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./include/Eigen/") > results/cppcheck.txt'
+```
+
+## Valgrind
+```
+cd build
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./app/ik_solver args  > ../results/valgrind.txt 2>&1
+```
+
+## Doxygen
+The procedure to create doxygen documents has been automated in the CMakeLists.text file
+
+## License
+
+MIT License
+
+Copyright (c) 2022 Qamar Syed, Sanchit Kedia, Tanmay Haldankar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

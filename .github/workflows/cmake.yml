@@ -1,6 +1,8 @@
 name: Build Status
 
-on: push
+on: 
+ push:
+ pull_request:
 
 jobs:
   build:
@@ -9,11 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Before Install
-      run: pip install --user cpp-coveralls 
-
     - name: Install
-      run: sudo apt-get install -y -qq lcov
+      run: |
+       sudo apt-get install -y -qq lcov
+       sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+      
 
     - name: Compile using Cmake
       run: |
