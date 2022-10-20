@@ -84,7 +84,7 @@ valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./app/ik_so
 ```
 
 ## Doxygen
-The procedure to create doxygen documents has been automated in the CmakeList.text file
+The procedure to create doxygen documents has been automated in the CMakeLists.text file
 
 ## License
 
