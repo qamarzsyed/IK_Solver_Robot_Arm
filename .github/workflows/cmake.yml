@@ -1,6 +1,8 @@
 name: Build Status
 
-on: push
+on: 
+ push:
+ pull_request:
 
 jobs:
   build:
@@ -8,9 +10,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Before Install
-      run: pip install --user cpp-coveralls 
 
     - name: Install
       run: sudo apt-get install -y -qq lcov
