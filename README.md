@@ -29,7 +29,7 @@
 
 ## Submission
 - Project Proposal Video : https://drive.google.com/file/d/1DN1yFC1ftZCqTR0bdwy7rqwPNF0FwN4z/view?usp=sharing
-- Project Phase 1 Video :
+- Project Phase 1 Video : https://drive.google.com/file/d/1aRyd8k2F9J4Gdd8d-0GsCtbD0NMbCdna/view?usp=sharing
 
 ## Dependencies
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) :The project includes the Eigen library for linear algebra operations.
@@ -77,11 +77,14 @@ Change to the `root` directory, and run:
 cppcheck --enable=all --std=c++11 --force -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./include/Eigen/") > results/cppcheck.txt'
 ```
 
-# Valgrind
+## Valgrind
 ```
 cd build
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./app/ik_solver args  > ../results/valgrind.txt 2>&1
 ```
+
+## Doxygen
+The procedure to create doxygen documents has been automated in the CMakeLists.text file
 
 ## License
 
