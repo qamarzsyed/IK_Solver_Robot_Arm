@@ -8,9 +8,8 @@
  * @copyright MIT License (c)
  *
  */
-#include <iostream>
 
-#include "../include/forward_kinematics.hpp"
+#include "../include/inverse_kinematics.hpp"
 
 using std::cout;
 using std::endl;
@@ -22,12 +21,25 @@ using std::endl;
  */
 int main() {
   RobotParameters r1;
-  ForwardKinematics k1;
-  cout << "The Robot for the project is " << r1.robot_name << endl;
-  cout << "The DH parameters are : \n " << r1.get_dh_parameters() << endl;
-  cout << "The Transformation Matrix \u2070T\u2081 is \n"
-       << k1.calculate_TF(1) << endl;
-  cout << "The Transformation Matrix \u2070T\u2086 is \n"
-       << k1.solve_fk() << endl;
+  InverseKinematics i1;
+  ForwardKinematics f1;
+
+  //cout << "Angles RP"<<endl;
+  
+  //for (int i = 0; i < 6; i++) {
+  //  cout << r1.get_robot_angles()[i]<<endl;
+  //}
+  i1.solve_ik();
+  r1.set_robot_angles({M_PI_2, -M_PI_2, 0, 0, 0, 0});
+
+ // cout << "Angles RPI"<<endl;
+  
+  //for (int i = 0; i < 6; i++) {
+  //  cout << r1.get_robot_angles()[i]<<endl;
+ // }
+
+  cout << "\nThe transformation matrix is " << endl;
+  cout << f1.solve_fk() << endl;
+
   return 0;
-}
+} 

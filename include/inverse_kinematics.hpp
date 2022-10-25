@@ -13,11 +13,9 @@
 #ifndef INVERSE_KINEMATICS_HPP_
 #define INVERSE_KINEMATICS_HPP_
 
-#include <iostream>
-#include <vector>
 
-#include "../include/robot_parameters.hpp"
-#include "Eigen/Dense"
+#include "../include/forward_kinematics.hpp"
+
 
 /**
  * @brief Definition of Inverse Kinematics Class

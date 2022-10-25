@@ -18,10 +18,11 @@ using std::vector;
 
 RobotParameters::RobotParameters() {
   robot_name = "Kuka KR5";
-  _dh_alpha = {-M_PI_2, 0, M_PI_2, -M_PI_2, M_PI_2, M_PI};
-  _dh_a = {75, 270, 90, 0, 0, 0};
-  _dh_d = {335, 0, 0, -295, 0, -80};
   _robot_angles = {M_PI_2, -M_PI_2, 0, 0, 0, 0};
+  _dh_alpha = {-M_PI_2, 0, M_PI_2, -M_PI_2, M_PI_2, M_PI};
+  _dh_a = {0.075, 0.270, 0.090, 0, 0, 0};
+  _dh_d = {0.335, 0, 0, -0.295, 0, -0.080};
+  
 }
 
 MatrixXd RobotParameters::get_dh_parameters() {

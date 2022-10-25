@@ -13,6 +13,7 @@
 #define INCLUDE_FORWARD_KINEMATICS_HPP_
 
 #include "../include/robot_parameters.hpp"
+#include <iostream>
 
 /**
  * @brief Definition of the Forward Kinematics Class
@@ -29,14 +30,14 @@ class ForwardKinematics : public RobotParameters {
    * @param i integer value denoting the row of _dh_matrix to be considered
    * @return Eigen::Matrix<double, 4, 4> Returns the transformation matrix
    */
-  Eigen::Matrix<double, 4, 4> calculate_TF(int i);
+  Eigen::Matrix4d calculate_TF(int i);
   /**
    * @brief Solve the forward kinematics for manipulator
    *
    * @return Eigen::Matrix<double, 4, 4> Returns the final Homogeneous
    * transformation matrix
    */
-  Eigen::Matrix<double, 4, 4> solve_fk();
+  Eigen::Matrix4d solve_fk();
 };
 
 #endif  // INCLUDE_FORWARD_KINEMATICS_HPP_
