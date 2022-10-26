@@ -1,4 +1,4 @@
-add_executable(ik_solver main.cpp robot_parameters.cpp forward_kinematics.cpp)
+add_executable(ik_solver main.cpp robot_parameters.cpp forward_kinematics.cpp inverse_kinematics.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )
