@@ -15,6 +15,7 @@ jobs:
       run: |
        sudo apt-get install -y -qq lcov
        sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+       pip3 install visual-kinematics
       
 
     - name: Compile using Cmake
