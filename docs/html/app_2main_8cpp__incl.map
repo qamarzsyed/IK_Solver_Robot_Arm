@@ -1,10 +1,11 @@
 <map id="app/main.cpp" name="app/main.cpp">
-<area shape="rect" id="node1" title="Program to execute the inverse kinematics and forward kinematics." alt="" coords="55,5,166,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,87,85,114"/>
-<area shape="rect" id="node3" href="$inverse__kinematics_8hpp.html" title=" " alt="" coords="109,80,243,121"/>
-<area shape="rect" id="node4" href="$forward__kinematics_8hpp.html" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="109,169,243,211"/>
-<area shape="rect" id="node5" href="$robot__parameters_8hpp.html" title="Definition of Robot Parameters class and Declaration of its Methods." alt="" coords="61,259,291,285"/>
-<area shape="rect" id="node6" title=" " alt="" coords="61,333,120,360"/>
-<area shape="rect" id="node7" title=" " alt="" coords="145,333,207,360"/>
-<area shape="rect" id="node8" title=" " alt="" coords="231,333,398,360"/>
+<area shape="rect" id="node1" title="Program to execute the inverse kinematics and forward kinematics." alt="" coords="93,5,204,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,87,84,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,87,189,114"/>
+<area shape="rect" id="node4" href="$inverse__kinematics_8hpp.html" title=" " alt="" coords="213,80,346,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="217,333,280,360"/>
+<area shape="rect" id="node6" href="$forward__kinematics_8hpp.html" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="276,169,411,211"/>
+<area shape="rect" id="node7" href="$robot__parameters_8hpp.html" title="Definition of Robot Parameters class and Declaration of its Methods." alt="" coords="253,259,482,285"/>
+<area shape="rect" id="node8" title=" " alt="" coords="321,333,379,360"/>
+<area shape="rect" id="node9" title=" " alt="" coords="404,333,571,360"/>
 </map>

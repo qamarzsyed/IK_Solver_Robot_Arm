@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['test_29',['TEST',['../code__test_8cpp.html#ab2544abed06081a3696bb1e9ce7be84a',1,'TEST(Robot_Parameters, CheckAngles):&#160;code_test.cpp'],['../code__test_8cpp.html#ad8a4b64e57649d84d1229cef68e36aa3',1,'TEST(Robot_Parameters, CheckDH):&#160;code_test.cpp'],['../code__test_8cpp.html#a4d5b06021348a980e672f2732fe5b7ad',1,'TEST(Robot_Parameters, CheckSetAngles):&#160;code_test.cpp'],['../code__test_8cpp.html#a5fa3fbaef1b17ec27547c9fa9e05b063',1,'TEST(Forward_Kinematics, check_calculateTF):&#160;code_test.cpp'],['../code__test_8cpp.html#a122a3ddb4d778e988c24c79347c6f9a6',1,'TEST(Forward_Kinematics, check_solvefk):&#160;code_test.cpp']]]
+  ['robot_42',['robot',['../namespacesimulation.html#a11dbe1f7d2770d9278e44be495452f1c',1,'simulation']]],
+  ['robot_5fname_43',['robot_name',['../classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c',1,'RobotParameters']]],
+  ['robot_5fparameters_2ecpp_44',['robot_parameters.cpp',['../robot__parameters_8cpp.html',1,'']]],
+  ['robot_5fparameters_2ehpp_45',['robot_parameters.hpp',['../robot__parameters_8hpp.html',1,'']]],
+  ['robotparameters_46',['RobotParameters',['../classRobotParameters.html',1,'RobotParameters'],['../classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3',1,'RobotParameters::RobotParameters()']]]
 ];

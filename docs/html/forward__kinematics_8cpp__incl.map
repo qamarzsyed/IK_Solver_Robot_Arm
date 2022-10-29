@@ -1,5 +1,5 @@
 <map id="app/forward_kinematics.cpp" name="app/forward_kinematics.cpp">
-<area shape="rect" id="node1" title="Program to define the Methods of Forward Kinematics Class." alt="" coords="20834,5,21041,32"/>
+<area shape="rect" id="node1" title="Program to define the Methods of Forward Kinematics Class." alt="" coords="20943,5,21150,32"/>
 <area shape="rect" id="node2" href="$forward__kinematics_8hpp.html" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="62,102,197,143"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,288,64,315"/>
 <area shape="rect" id="node7" title=" " alt="" coords="221,87,414,158"/>
@@ -207,6 +207,7 @@
 <area shape="rect" id="node209" title=" " alt="" coords="45121,80,45364,165"/>
 <area shape="rect" id="node210" title=" " alt="" coords="45388,80,45631,165"/>
 <area shape="rect" id="node211" title=" " alt="" coords="45655,80,45897,165"/>
+<area shape="rect" id="node212" title=" " alt="" coords="45921,109,46001,136"/>
 <area shape="rect" id="node3" href="$robot__parameters_8hpp.html" title="Definition of Robot Parameters class and Declaration of its Methods." alt="" coords="39,213,268,240"/>
 <area shape="rect" id="node5" title=" " alt="" coords="105,288,167,315"/>
 <area shape="rect" id="node6" title=" " alt="" coords="191,288,358,315"/>

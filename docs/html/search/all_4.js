@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['get_5fdh_5fparameters_8',['get_dh_parameters',['../classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6',1,'RobotParameters']]],
-  ['get_5feff_5fposition_9',['get_eff_position',['../classInverseKinematics.html#ae563bd5a75abc40dece585937b1cfd35',1,'InverseKinematics']]],
-  ['get_5feff_5frotation_10',['get_eff_rotation',['../classInverseKinematics.html#aae7a4ea662ab28996451e757f192406c',1,'InverseKinematics']]],
-  ['get_5frobot_5fangles_11',['get_robot_angles',['../classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631',1,'RobotParameters']]]
+  ['euler_5fx_17',['euler_x',['../classForwardKinematics.html#ab093cb9f873674c5b08debbf12801f9b',1,'ForwardKinematics']]],
+  ['euler_5fy_18',['euler_y',['../classForwardKinematics.html#add649caa8c5b9851755ed8f9c6cfd9ec',1,'ForwardKinematics']]],
+  ['euler_5fz_19',['euler_z',['../classForwardKinematics.html#a7e726f564b4bb11c76a85d08ac833a95',1,'ForwardKinematics']]]
 ];

@@ -22,7 +22,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">IK SOLVER
-   &#160;<span id="projectnumber">PHASE 1</span>
    </div>
    <div id="projectbrief">The aim of this project is to design and develop an inverse kinematics solver for a 6-axis Manipulator at ACME Robotics.</div>
   </td>
@@ -72,23 +71,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="forward__kinematics_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef FORWARD_KINEMATICS_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define FORWARD_KINEMATICS_HPP_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef INCLUDE_FORWARD_KINEMATICS_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define INCLUDE_FORWARD_KINEMATICS_HPP_</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../include/robot_parameters.hpp&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classForwardKinematics.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classForwardKinematics.html">ForwardKinematics</a> : <span class="keyword">public</span> <a class="code" href="classRobotParameters.html">RobotParameters</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Eigen::Matrix4d <a class="code" href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">calculate_TF</a>(<span class="keywordtype">int</span> i, Eigen::MatrixXd _dh_matrix);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Eigen::Matrix4d <a class="code" href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">solve_fk</a>(Eigen::MatrixXd _dh_matrix);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif  // FORWARD_KINEMATICS_HPP_</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classForwardKinematics.html#ab093cb9f873674c5b08debbf12801f9b">   23</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classForwardKinematics.html#ab093cb9f873674c5b08debbf12801f9b">euler_x</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classForwardKinematics.html#add649caa8c5b9851755ed8f9c6cfd9ec">   24</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classForwardKinematics.html#add649caa8c5b9851755ed8f9c6cfd9ec">euler_y</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classForwardKinematics.html#a7e726f564b4bb11c76a85d08ac833a95">   25</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classForwardKinematics.html#a7e726f564b4bb11c76a85d08ac833a95">euler_z</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Eigen::Matrix4d <a class="code" href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">calculate_TF</a>(<span class="keywordtype">int</span> i, Eigen::MatrixXd _dh_matrix);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Eigen::Matrix4d <a class="code" href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">solve_fk</a>(Eigen::MatrixXd _dh_matrix);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif  // INCLUDE_FORWARD_KINEMATICS_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassRobotParameters_html"><div class="ttname"><a href="classRobotParameters.html">RobotParameters</a></div><div class="ttdoc">Definition of the Robot Parameter Class.</div><div class="ttdef"><b>Definition:</b> robot_parameters.hpp:24</div></div>
-<div class="ttc" id="aclassForwardKinematics_html_afbdb391a415accb92fe5ebe70ab88a40"><div class="ttname"><a href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">ForwardKinematics::calculate_TF</a></div><div class="ttdeci">Eigen::Matrix4d calculate_TF(int i, Eigen::MatrixXd _dh_matrix)</div><div class="ttdoc">Calculate the DH transfromation matrix for each joint pair.</div><div class="ttdef"><b>Definition:</b> forward_kinematics.cpp:17</div></div>
-<div class="ttc" id="aclassForwardKinematics_html_a36626df15b4587efafca874e95c6bb50"><div class="ttname"><a href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">ForwardKinematics::solve_fk</a></div><div class="ttdeci">Eigen::Matrix4d solve_fk(Eigen::MatrixXd _dh_matrix)</div><div class="ttdoc">Solve the forward kinematics for manipulator.</div><div class="ttdef"><b>Definition:</b> forward_kinematics.cpp:34</div></div>
+<div class="ttc" id="aclassForwardKinematics_html_afbdb391a415accb92fe5ebe70ab88a40"><div class="ttname"><a href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">ForwardKinematics::calculate_TF</a></div><div class="ttdeci">Eigen::Matrix4d calculate_TF(int i, Eigen::MatrixXd _dh_matrix)</div><div class="ttdoc">Calculate the DH transfromation matrix for each joint pair.</div><div class="ttdef"><b>Definition:</b> forward_kinematics.cpp:18</div></div>
+<div class="ttc" id="aclassForwardKinematics_html_a7e726f564b4bb11c76a85d08ac833a95"><div class="ttname"><a href="classForwardKinematics.html#a7e726f564b4bb11c76a85d08ac833a95">ForwardKinematics::euler_z</a></div><div class="ttdeci">double euler_z</div><div class="ttdef"><b>Definition:</b> forward_kinematics.hpp:25</div></div>
+<div class="ttc" id="aclassForwardKinematics_html_add649caa8c5b9851755ed8f9c6cfd9ec"><div class="ttname"><a href="classForwardKinematics.html#add649caa8c5b9851755ed8f9c6cfd9ec">ForwardKinematics::euler_y</a></div><div class="ttdeci">double euler_y</div><div class="ttdef"><b>Definition:</b> forward_kinematics.hpp:24</div></div>
+<div class="ttc" id="aclassForwardKinematics_html_a36626df15b4587efafca874e95c6bb50"><div class="ttname"><a href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">ForwardKinematics::solve_fk</a></div><div class="ttdeci">Eigen::Matrix4d solve_fk(Eigen::MatrixXd _dh_matrix)</div><div class="ttdoc">Solve the forward kinematics for manipulator.</div><div class="ttdef"><b>Definition:</b> forward_kinematics.cpp:35</div></div>
 <div class="ttc" id="aclassForwardKinematics_html"><div class="ttname"><a href="classForwardKinematics.html">ForwardKinematics</a></div><div class="ttdoc">Definition of the Forward Kinematics Class.</div><div class="ttdef"><b>Definition:</b> forward_kinematics.hpp:21</div></div>
+<div class="ttc" id="aclassForwardKinematics_html_ab093cb9f873674c5b08debbf12801f9b"><div class="ttname"><a href="classForwardKinematics.html#ab093cb9f873674c5b08debbf12801f9b">ForwardKinematics::euler_x</a></div><div class="ttdeci">double euler_x</div><div class="ttdef"><b>Definition:</b> forward_kinematics.hpp:23</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

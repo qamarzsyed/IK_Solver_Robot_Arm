@@ -11,7 +11,7 @@ if (COVERAGE)
     include(CodeCoverage)
     set(LCOV_REMOVE_EXTRA "'*vendor/*'" , "'*include/Eigen/*'")
     setup_target_for_coverage(code_coverage test/code_test coverage)
-    set(COVERAGE_SRCS include/robot_parameters.hpp  app/robot_parameters.cpp)
+    set(COVERAGE_SRCS app/main.cpp include/robot_parameters.hpp  app/robot_parameters.cpp include/forward_kinmeatics.hpp  app/forward_kinmeatics.cpp include/inverse_kinematics.hpp  app/inverse_kinematics.cpp)
 
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
