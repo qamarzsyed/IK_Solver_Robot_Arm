@@ -20,6 +20,9 @@
  */
 class ForwardKinematics : public RobotParameters {
  public:
+  double euler_x;
+  double euler_y;
+  double euler_z;
   /**
    * @brief Calculate the DH transfromation matrix for each joint pair
    *
