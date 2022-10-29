@@ -30,9 +30,9 @@ Collaboration diagram for Forward\+Kinematics\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \mbox{\hyperlink{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}{calculate\+\_\+\+TF}} (int i)
+Eigen\+::\+Matrix4d \mbox{\hyperlink{classForwardKinematics_afbdb391a415accb92fe5ebe70ab88a40}{calculate\+\_\+\+TF}} (int i, Eigen\+::\+Matrix\+Xd \+\_\+dh\+\_\+matrix)
 \begin{DoxyCompactList}\small\item\em Calculate the DH transfromation matrix for each joint pair. \end{DoxyCompactList}\item 
-Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \mbox{\hyperlink{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}{solve\+\_\+fk}} ()
+Eigen\+::\+Matrix4d \mbox{\hyperlink{classForwardKinematics_a36626df15b4587efafca874e95c6bb50}{solve\+\_\+fk}} (Eigen\+::\+Matrix\+Xd \+\_\+dh\+\_\+matrix)
 \begin{DoxyCompactList}\small\item\em Solve the forward kinematics for manipulator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -43,11 +43,11 @@ Definition of the Forward Kinematics Class.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}\label{classForwardKinematics_a69f3a4d7166e61564f63ff8b778f6f24}} 
+\mbox{\Hypertarget{classForwardKinematics_afbdb391a415accb92fe5ebe70ab88a40}\label{classForwardKinematics_afbdb391a415accb92fe5ebe70ab88a40}} 
 \index{ForwardKinematics@{ForwardKinematics}!calculate\_TF@{calculate\_TF}}
 \index{calculate\_TF@{calculate\_TF}!ForwardKinematics@{ForwardKinematics}}
 \doxysubsubsection{\texorpdfstring{calculate\_TF()}{calculate\_TF()}}
-{\footnotesize\ttfamily Matrix$<$ double, 4, 4 $>$ Forward\+Kinematics\+::calculate\+\_\+\+TF (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Matrix4d Forward\+Kinematics\+::calculate\+\_\+\+TF (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Eigen\+::\+Matrix\+Xd}]{\+\_\+dh\+\_\+matrix }\end{DoxyParamCaption})}
 
 
 
@@ -61,11 +61,11 @@ Calculate the DH transfromation matrix for each joint pair.
 \begin{DoxyReturn}{Returns}
 Eigen\+::\+Matrix$<$double, 4, 4$>$ Returns the transformation matrix 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}\label{classForwardKinematics_ab0ef5057b95bc15ae582d517ddc89e0b}} 
+\mbox{\Hypertarget{classForwardKinematics_a36626df15b4587efafca874e95c6bb50}\label{classForwardKinematics_a36626df15b4587efafca874e95c6bb50}} 
 \index{ForwardKinematics@{ForwardKinematics}!solve\_fk@{solve\_fk}}
 \index{solve\_fk@{solve\_fk}!ForwardKinematics@{ForwardKinematics}}
 \doxysubsubsection{\texorpdfstring{solve\_fk()}{solve\_fk()}}
-{\footnotesize\ttfamily Matrix$<$ double, 4, 4 $>$ Forward\+Kinematics\+::solve\+\_\+fk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Matrix4d Forward\+Kinematics\+::solve\+\_\+fk (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix\+Xd}]{\+\_\+dh\+\_\+matrix }\end{DoxyParamCaption})}
 
 
 

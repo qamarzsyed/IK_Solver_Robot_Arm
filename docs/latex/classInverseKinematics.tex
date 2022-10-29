@@ -1,0 +1,141 @@
+\hypertarget{classInverseKinematics}{}\doxysection{Inverse\+Kinematics Class Reference}
+\label{classInverseKinematics}\index{InverseKinematics@{InverseKinematics}}
+
+
+Definition of Inverse Kinematics Class.  
+
+
+
+
+{\ttfamily \#include $<$inverse\+\_\+kinematics.\+hpp$>$}
+
+
+
+Inheritance diagram for Inverse\+Kinematics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classInverseKinematics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Inverse\+Kinematics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classInverseKinematics__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInverseKinematics_a5ac416b45f9039ce28836cd73193d04b}{Inverse\+Kinematics}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Inverse Kinematics object to assign default values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInverseKinematics_a63f92686c248d8a27557bf3154ccc353}{set\+\_\+eff\+\_\+rotation}} (Eigen\+::\+Matrix3d \+\_\+\+R\+\_\+E)
+\begin{DoxyCompactList}\small\item\em Sets the end effector rotation matrix. \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \mbox{\hyperlink{classInverseKinematics_aae7a4ea662ab28996451e757f192406c}{get\+\_\+eff\+\_\+rotation}} ()
+\begin{DoxyCompactList}\small\item\em Gets the end effector rotation matrix. \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \mbox{\hyperlink{classInverseKinematics_ae563bd5a75abc40dece585937b1cfd35}{get\+\_\+eff\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the end effector position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInverseKinematics_a940872a45c207e265ab3bd6b21afeee2}{set\+\_\+eff\+\_\+position}} (Eigen\+::\+Vector3d eff\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Sets the end effector position. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classInverseKinematics_a1277b9abd7d801083906e20b0726f6cd}{solve\+\_\+ik}} ()
+\begin{DoxyCompactList}\small\item\em Method to solve the inverse kinematics of the Manipulator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Definition of Inverse Kinematics Class. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInverseKinematics_a5ac416b45f9039ce28836cd73193d04b}\label{classInverseKinematics_a5ac416b45f9039ce28836cd73193d04b}} 
+\index{InverseKinematics@{InverseKinematics}!InverseKinematics@{InverseKinematics}}
+\index{InverseKinematics@{InverseKinematics}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{InverseKinematics()}{InverseKinematics()}}
+{\footnotesize\ttfamily Inverse\+Kinematics\+::\+Inverse\+Kinematics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Inverse Kinematics object to assign default values. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInverseKinematics_ae563bd5a75abc40dece585937b1cfd35}\label{classInverseKinematics_ae563bd5a75abc40dece585937b1cfd35}} 
+\index{InverseKinematics@{InverseKinematics}!get\_eff\_position@{get\_eff\_position}}
+\index{get\_eff\_position@{get\_eff\_position}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{get\_eff\_position()}{get\_eff\_position()}}
+{\footnotesize\ttfamily Eigen\+::\+Vector3d Inverse\+Kinematics\+::get\+\_\+eff\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the end effector position. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ Returns a vector containing end effector postion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInverseKinematics_aae7a4ea662ab28996451e757f192406c}\label{classInverseKinematics_aae7a4ea662ab28996451e757f192406c}} 
+\index{InverseKinematics@{InverseKinematics}!get\_eff\_rotation@{get\_eff\_rotation}}
+\index{get\_eff\_rotation@{get\_eff\_rotation}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{get\_eff\_rotation()}{get\_eff\_rotation()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix3d Inverse\+Kinematics\+::get\+\_\+eff\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the end effector rotation matrix. 
+
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix3d Returns End effector rotation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInverseKinematics_a940872a45c207e265ab3bd6b21afeee2}\label{classInverseKinematics_a940872a45c207e265ab3bd6b21afeee2}} 
+\index{InverseKinematics@{InverseKinematics}!set\_eff\_position@{set\_eff\_position}}
+\index{set\_eff\_position@{set\_eff\_position}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{set\_eff\_position()}{set\_eff\_position()}}
+{\footnotesize\ttfamily void Inverse\+Kinematics\+::set\+\_\+eff\+\_\+position (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector3d}]{eff\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Sets the end effector position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eff\+\_\+position} & Vector containing end effector position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInverseKinematics_a63f92686c248d8a27557bf3154ccc353}\label{classInverseKinematics_a63f92686c248d8a27557bf3154ccc353}} 
+\index{InverseKinematics@{InverseKinematics}!set\_eff\_rotation@{set\_eff\_rotation}}
+\index{set\_eff\_rotation@{set\_eff\_rotation}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{set\_eff\_rotation()}{set\_eff\_rotation()}}
+{\footnotesize\ttfamily void Inverse\+Kinematics\+::set\+\_\+eff\+\_\+rotation (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix3d}]{\+\_\+\+R\+\_\+E }\end{DoxyParamCaption})}
+
+
+
+Sets the end effector rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+R\+\_\+E} & Rotation matrix for end effector with respect to base frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInverseKinematics_a1277b9abd7d801083906e20b0726f6cd}\label{classInverseKinematics_a1277b9abd7d801083906e20b0726f6cd}} 
+\index{InverseKinematics@{InverseKinematics}!solve\_ik@{solve\_ik}}
+\index{solve\_ik@{solve\_ik}!InverseKinematics@{InverseKinematics}}
+\doxysubsubsection{\texorpdfstring{solve\_ik()}{solve\_ik()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Inverse\+Kinematics\+::solve\+\_\+ik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to solve the inverse kinematics of the Manipulator. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{inverse__kinematics_8hpp}{inverse\+\_\+kinematics.\+hpp}}\item 
+app/\mbox{\hyperlink{inverse__kinematics_8cpp}{inverse\+\_\+kinematics.\+cpp}}\end{DoxyCompactItemize}

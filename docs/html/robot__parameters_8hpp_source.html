@@ -72,36 +72,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="robot__parameters_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef INCLUDE_ROBOT_PARAMETERS_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define INCLUDE_ROBOT_PARAMETERS_HPP_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ROBOT_PARAMETERS_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ROBOT_PARAMETERS_HPP_</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../include/Eigen/Dense&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classRobotParameters.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRobotParameters.html">RobotParameters</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  std::vector&lt;double&gt; _dh_alpha;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::vector&lt;double&gt; _dh_a;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::vector&lt;double&gt; _dh_d;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::vector&lt;double&gt; _robot_angles;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3">RobotParameters</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">   36</a></span>&#160;  std::string <a class="code" href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">robot_name</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Eigen::MatrixXd <a class="code" href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">get_dh_parameters</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::vector&lt;double&gt; <a class="code" href="classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631">get_robot_angles</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classRobotParameters.html#a4dc006415a0527455a87716579aac758">set_robot_angles</a>(std::vector&lt;double&gt; robot_angles);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif  // INCLUDE_ROBOT_PARAMETERS_HPP_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../include/Eigen/Dense&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classRobotParameters.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRobotParameters.html">RobotParameters</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::vector&lt;double&gt; _dh_alpha;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::vector&lt;double&gt; _dh_a;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::vector&lt;double&gt; _dh_d;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;double&gt; _robot_angles;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Eigen::MatrixXd DH;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3">RobotParameters</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">   38</a></span>&#160;  std::string <a class="code" href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">robot_name</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classRobotParameters.html#ade1e572a8433b8414f136a8878f7180e">set_dh_parameters</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Eigen::MatrixXd <a class="code" href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">get_dh_parameters</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;double&gt; <a class="code" href="classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631">get_robot_angles</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classRobotParameters.html#a4dc006415a0527455a87716579aac758">set_robot_angles</a>(std::vector&lt;double&gt; robot_angles);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  // ROBOT_PARAMETERS_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassRobotParameters_html"><div class="ttname"><a href="classRobotParameters.html">RobotParameters</a></div><div class="ttdoc">Definition of the Robot Parameter Class.</div><div class="ttdef"><b>Definition:</b> robot_parameters.hpp:23</div></div>
-<div class="ttc" id="aclassRobotParameters_html_a1de2462c0d8608c61cb28620cd52fdb6"><div class="ttname"><a href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">RobotParameters::get_dh_parameters</a></div><div class="ttdeci">Eigen::MatrixXd get_dh_parameters()</div><div class="ttdoc">Compute the dh parameters matrix.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:27</div></div>
-<div class="ttc" id="aclassRobotParameters_html_abb23a98c3b54b0cf00c6ced44991e631"><div class="ttname"><a href="classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631">RobotParameters::get_robot_angles</a></div><div class="ttdeci">std::vector&lt; double &gt; get_robot_angles()</div><div class="ttdoc">Gets the robot angles.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:37</div></div>
+<div class="ttc" id="aclassRobotParameters_html"><div class="ttname"><a href="classRobotParameters.html">RobotParameters</a></div><div class="ttdoc">Definition of the Robot Parameter Class.</div><div class="ttdef"><b>Definition:</b> robot_parameters.hpp:24</div></div>
+<div class="ttc" id="aclassRobotParameters_html_a1de2462c0d8608c61cb28620cd52fdb6"><div class="ttname"><a href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">RobotParameters::get_dh_parameters</a></div><div class="ttdeci">Eigen::MatrixXd get_dh_parameters()</div><div class="ttdoc">Compute the dh parameters matrix.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:35</div></div>
+<div class="ttc" id="aclassRobotParameters_html_ade1e572a8433b8414f136a8878f7180e"><div class="ttname"><a href="classRobotParameters.html#ade1e572a8433b8414f136a8878f7180e">RobotParameters::set_dh_parameters</a></div><div class="ttdeci">void set_dh_parameters()</div><div class="ttdoc">Sets the DH parameters.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:28</div></div>
+<div class="ttc" id="aclassRobotParameters_html_abb23a98c3b54b0cf00c6ced44991e631"><div class="ttname"><a href="classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631">RobotParameters::get_robot_angles</a></div><div class="ttdeci">std::vector&lt; double &gt; get_robot_angles()</div><div class="ttdoc">Gets the robot angles.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:40</div></div>
 <div class="ttc" id="aclassRobotParameters_html_a24ae817bbfa7ea775c027aeb4817cfa3"><div class="ttname"><a href="classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3">RobotParameters::RobotParameters</a></div><div class="ttdeci">RobotParameters()</div><div class="ttdoc">Construct a new Robot Parameters object to assign default values.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:19</div></div>
-<div class="ttc" id="aclassRobotParameters_html_ab4f065ddcad9119687a679343c2d214c"><div class="ttname"><a href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">RobotParameters::robot_name</a></div><div class="ttdeci">std::string robot_name</div><div class="ttdef"><b>Definition:</b> robot_parameters.hpp:36</div></div>
-<div class="ttc" id="aclassRobotParameters_html_a4dc006415a0527455a87716579aac758"><div class="ttname"><a href="classRobotParameters.html#a4dc006415a0527455a87716579aac758">RobotParameters::set_robot_angles</a></div><div class="ttdeci">void set_robot_angles(std::vector&lt; double &gt; robot_angles)</div><div class="ttdoc">Sets the robot angles.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:39</div></div>
+<div class="ttc" id="aclassRobotParameters_html_ab4f065ddcad9119687a679343c2d214c"><div class="ttname"><a href="classRobotParameters.html#ab4f065ddcad9119687a679343c2d214c">RobotParameters::robot_name</a></div><div class="ttdeci">std::string robot_name</div><div class="ttdef"><b>Definition:</b> robot_parameters.hpp:38</div></div>
+<div class="ttc" id="aclassRobotParameters_html_a4dc006415a0527455a87716579aac758"><div class="ttname"><a href="classRobotParameters.html#a4dc006415a0527455a87716579aac758">RobotParameters::set_robot_angles</a></div><div class="ttdeci">void set_robot_angles(std::vector&lt; double &gt; robot_angles)</div><div class="ttdoc">Sets the robot angles.</div><div class="ttdef"><b>Definition:</b> robot_parameters.cpp:42</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
