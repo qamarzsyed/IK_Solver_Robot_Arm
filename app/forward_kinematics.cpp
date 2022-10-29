@@ -11,15 +11,12 @@
 #include "../include/forward_kinematics.hpp"
 #include <iostream>
 
-using Eigen::Matrix;
-using std::cout;
-using std::endl;
-using std::vector;
+using Eigen::Matrix3d;
+using Eigen::Matrix4d;
+using Eigen::VectorXd;
 
-Matrix<double, 4, 4> ForwardKinematics::calculate_TF(int j) {
-  _dh_matrix = get_dh_parameters();
-  int i = j;
-  Matrix<double, 4, 4> Tf{
+Matrix4d ForwardKinematics::calculate_TF(int i, Eigen::MatrixXd _dh_matrix) {
+  Matrix4d Tf{
       {cos(_dh_matrix.coeff(i, 0)),
        -sin(_dh_matrix.coeff(i, 0)) * cos(_dh_matrix.coeff(i, 1)),
        sin(_dh_matrix.coeff(i, 0)) * sin(_dh_matrix.coeff(i, 1)),
@@ -35,24 +32,19 @@ Matrix<double, 4, 4> ForwardKinematics::calculate_TF(int j) {
   return Tf;
 }
 
-Matrix<double, 4, 4> ForwardKinematics::solve_fk() {
-  Matrix<double, 4, 4> Tf1 = Matrix<double, 4, 4>::Identity();
+Matrix4d ForwardKinematics::solve_fk(Eigen::MatrixXd _dh_matrix) {
+  Matrix4d Tf1 = Matrix4d::Identity();
   for (int i = 0; i < 6; i++) {
-    Matrix<double, 4, 4> Tf_i = calculate_TF(i);
-    Tf1 = Tf1 * Tf_i;
+    Matrix4d Tf_ = calculate_TF(i, _dh_matrix);
+    Tf1 = Tf1 * Tf_;
   }
-  Matrix<double, 3, 3> Rotation = Tf1.block<3, 3>(0, 0);
-  Matrix<double, 4, 1> Position1 = Tf1.col(3);
-  vector<double> Position(3);
-  cout << "The position is vector " << endl;
-  cout << "[";
-  for (int i = 0; i < 3; i++) {
-    Position[i] = Position1.coeff(i, 0);
-    cout << Position[i] << ',';
-  }
-  cout << "]" << endl;
-  cout << "The Rotation matrix is \n" << Rotation << endl;
-  // For the final implementation, we might need to instead pass the 3x3 matrix
-  // for rotation and 3 element vector for position instead of 4x4 matrix.
+  Eigen::Matrix3d Rotation = Tf1.block(0, 0, 3, 3);
+
+  euler_x = atan(Rotation.coeff(2, 1) / (Rotation.coeff(2, 2)));
+  euler_y =
+      atan(-Rotation.coeff(2, 0) /
+           (sqrt(pow(Rotation.coeff(2, 1), 2) + pow(Rotation.coeff(2, 2), 2))));
+  euler_z = atan(Rotation.coeff(1, 0) / (Rotation.coeff(0, 0)));
+
   return Tf1;
 }

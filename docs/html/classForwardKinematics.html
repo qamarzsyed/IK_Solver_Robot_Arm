@@ -96,16 +96,19 @@ Collaboration diagram for ForwardKinematics:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69f3a4d7166e61564f63ff8b778f6f24"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classForwardKinematics.html#a69f3a4d7166e61564f63ff8b778f6f24">calculate_TF</a> (int i)</td></tr>
-<tr class="memdesc:a69f3a4d7166e61564f63ff8b778f6f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the DH transfromation matrix for each joint pair.  <a href="classForwardKinematics.html#a69f3a4d7166e61564f63ff8b778f6f24">More...</a><br /></td></tr>
-<tr class="separator:a69f3a4d7166e61564f63ff8b778f6f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ef5057b95bc15ae582d517ddc89e0b"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classForwardKinematics.html#ab0ef5057b95bc15ae582d517ddc89e0b">solve_fk</a> ()</td></tr>
-<tr class="memdesc:ab0ef5057b95bc15ae582d517ddc89e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the forward kinematics for manipulator.  <a href="classForwardKinematics.html#ab0ef5057b95bc15ae582d517ddc89e0b">More...</a><br /></td></tr>
-<tr class="separator:ab0ef5057b95bc15ae582d517ddc89e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdb391a415accb92fe5ebe70ab88a40"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">calculate_TF</a> (int i, Eigen::MatrixXd _dh_matrix)</td></tr>
+<tr class="memdesc:afbdb391a415accb92fe5ebe70ab88a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the DH transfromation matrix for each joint pair.  <a href="classForwardKinematics.html#afbdb391a415accb92fe5ebe70ab88a40">More...</a><br /></td></tr>
+<tr class="separator:afbdb391a415accb92fe5ebe70ab88a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36626df15b4587efafca874e95c6bb50"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">solve_fk</a> (Eigen::MatrixXd _dh_matrix)</td></tr>
+<tr class="memdesc:a36626df15b4587efafca874e95c6bb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the forward kinematics for manipulator.  <a href="classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50">More...</a><br /></td></tr>
+<tr class="separator:a36626df15b4587efafca874e95c6bb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRobotParameters"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRobotParameters')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRobotParameters.html">RobotParameters</a></td></tr>
 <tr class="memitem:a24ae817bbfa7ea775c027aeb4817cfa3 inherit pub_methods_classRobotParameters"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3">RobotParameters</a> ()</td></tr>
 <tr class="memdesc:a24ae817bbfa7ea775c027aeb4817cfa3 inherit pub_methods_classRobotParameters"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Robot Parameters object to assign default values.  <a href="classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3">More...</a><br /></td></tr>
 <tr class="separator:a24ae817bbfa7ea775c027aeb4817cfa3 inherit pub_methods_classRobotParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1e572a8433b8414f136a8878f7180e inherit pub_methods_classRobotParameters"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotParameters.html#ade1e572a8433b8414f136a8878f7180e">set_dh_parameters</a> ()</td></tr>
+<tr class="memdesc:ade1e572a8433b8414f136a8878f7180e inherit pub_methods_classRobotParameters"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the DH parameters.  <a href="classRobotParameters.html#ade1e572a8433b8414f136a8878f7180e">More...</a><br /></td></tr>
+<tr class="separator:ade1e572a8433b8414f136a8878f7180e inherit pub_methods_classRobotParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de2462c0d8608c61cb28620cd52fdb6 inherit pub_methods_classRobotParameters"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">get_dh_parameters</a> ()</td></tr>
 <tr class="memdesc:a1de2462c0d8608c61cb28620cd52fdb6 inherit pub_methods_classRobotParameters"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the dh parameters matrix.  <a href="classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6">More...</a><br /></td></tr>
 <tr class="separator:a1de2462c0d8608c61cb28620cd52fdb6 inherit pub_methods_classRobotParameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,18 +128,28 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definition of the Forward Kinematics Class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69f3a4d7166e61564f63ff8b778f6f24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f3a4d7166e61564f63ff8b778f6f24">&#9670;&nbsp;</a></span>calculate_TF()</h2>
+<a id="afbdb391a415accb92fe5ebe70ab88a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdb391a415accb92fe5ebe70ab88a40">&#9670;&nbsp;</a></span>calculate_TF()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Matrix&lt; double, 4, 4 &gt; ForwardKinematics::calculate_TF </td>
+          <td class="memname">Matrix4d ForwardKinematics::calculate_TF </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>_dh_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,16 +165,17 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0ef5057b95bc15ae582d517ddc89e0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0ef5057b95bc15ae582d517ddc89e0b">&#9670;&nbsp;</a></span>solve_fk()</h2>
+<a id="a36626df15b4587efafca874e95c6bb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36626df15b4587efafca874e95c6bb50">&#9670;&nbsp;</a></span>solve_fk()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Matrix&lt; double, 4, 4 &gt; ForwardKinematics::solve_fk </td>
+          <td class="memname">Matrix4d ForwardKinematics::solve_fk </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Eigen::MatrixXd&#160;</td>
+          <td class="paramname"><em>_dh_matrix</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

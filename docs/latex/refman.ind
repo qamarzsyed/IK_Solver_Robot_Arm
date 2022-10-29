@@ -1,73 +1,96 @@
 \begin{theindex}
 
   \item {add\_executable}
-    \subitem {CMakeLists.txt}, \hyperpage{13}
-  \item {app/CMakeLists.txt}, \hyperpage{13}
-  \item {app/forward\_kinematics.cpp}, \hyperpage{14}
-  \item {app/main.cpp}, \hyperpage{15}
-  \item {app/robot\_parameters.cpp}, \hyperpage{17}
+    \subitem {CMakeLists.txt}, \hyperpage{17}
+  \item {app/CMakeLists.txt}, \hyperpage{17}
+  \item {app/forward\_kinematics.cpp}, \hyperpage{18}
+  \item {app/inverse\_kinematics.cpp}, \hyperpage{19}
+  \item {app/main.cpp}, \hyperpage{19}
+  \item {app/robot\_parameters.cpp}, \hyperpage{22}
 
   \indexspace
 
   \item {calculate\_TF}
-    \subitem {ForwardKinematics}, \hyperpage{8}
+    \subitem {ForwardKinematics}, \hyperpage{10}
   \item {CMakeLists.txt}
-    \subitem {add\_executable}, \hyperpage{13}
-    \subitem {set}, \hyperpage{13}
+    \subitem {add\_executable}, \hyperpage{17}
+    \subitem {set}, \hyperpage{17}
   \item {code\_test.cpp}
-    \subitem {TEST}, \hyperpage{21, 22}
+    \subitem {TEST}, \hyperpage{28, 29}
 
   \indexspace
 
-  \item {ForwardKinematics}, \hyperpage{7}
-    \subitem {calculate\_TF}, \hyperpage{8}
-    \subitem {solve\_fk}, \hyperpage{8}
+  \item {docs/introduction.txt}, \hyperpage{23}
+
+  \indexspace
+
+  \item {ForwardKinematics}, \hyperpage{9}
+    \subitem {calculate\_TF}, \hyperpage{10}
+    \subitem {solve\_fk}, \hyperpage{10}
 
   \indexspace
 
   \item {get\_dh\_parameters}
-    \subitem {RobotParameters}, \hyperpage{10}
+    \subitem {RobotParameters}, \hyperpage{14}
+  \item {get\_eff\_angles}
+    \subitem {InverseKinematics}, \hyperpage{12}
+  \item {get\_eff\_position}
+    \subitem {InverseKinematics}, \hyperpage{12}
   \item {get\_robot\_angles}
-    \subitem {RobotParameters}, \hyperpage{10}
+    \subitem {RobotParameters}, \hyperpage{14}
 
   \indexspace
 
-  \item {include/forward\_kinematics.hpp}, \hyperpage{18}
-  \item {include/robot\_parameters.hpp}, \hyperpage{19}
+  \item {include/forward\_kinematics.hpp}, \hyperpage{23}
+  \item {include/inverse\_kinematics.hpp}, \hyperpage{24}
+  \item {include/robot\_parameters.hpp}, \hyperpage{26}
+  \item {InverseKinematics}, \hyperpage{11}
+    \subitem {get\_eff\_angles}, \hyperpage{12}
+    \subitem {get\_eff\_position}, \hyperpage{12}
+    \subitem {InverseKinematics}, \hyperpage{12}
+    \subitem {set\_eff\_angles}, \hyperpage{12}
+    \subitem {set\_eff\_position}, \hyperpage{13}
+    \subitem {solve\_ik}, \hyperpage{13}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{16, 17}
+    \subitem {main.cpp}, \hyperpage{20, 21}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{16, 17}
+    \subitem {main}, \hyperpage{20, 21}
 
   \indexspace
 
   \item {robot\_name}
-    \subitem {RobotParameters}, \hyperpage{11}
-  \item {RobotParameters}, \hyperpage{9}
-    \subitem {get\_dh\_parameters}, \hyperpage{10}
-    \subitem {get\_robot\_angles}, \hyperpage{10}
-    \subitem {robot\_name}, \hyperpage{11}
-    \subitem {RobotParameters}, \hyperpage{9}
-    \subitem {set\_robot\_angles}, \hyperpage{10}
+    \subitem {RobotParameters}, \hyperpage{15}
+  \item {RobotParameters}, \hyperpage{13}
+    \subitem {get\_dh\_parameters}, \hyperpage{14}
+    \subitem {get\_robot\_angles}, \hyperpage{14}
+    \subitem {robot\_name}, \hyperpage{15}
+    \subitem {RobotParameters}, \hyperpage{14}
+    \subitem {set\_robot\_angles}, \hyperpage{15}
 
   \indexspace
 
   \item {set}
-    \subitem {CMakeLists.txt}, \hyperpage{13}
+    \subitem {CMakeLists.txt}, \hyperpage{17}
+  \item {set\_eff\_angles}
+    \subitem {InverseKinematics}, \hyperpage{12}
+  \item {set\_eff\_position}
+    \subitem {InverseKinematics}, \hyperpage{13}
   \item {set\_robot\_angles}
-    \subitem {RobotParameters}, \hyperpage{10}
+    \subitem {RobotParameters}, \hyperpage{15}
   \item {solve\_fk}
-    \subitem {ForwardKinematics}, \hyperpage{8}
+    \subitem {ForwardKinematics}, \hyperpage{10}
+  \item {solve\_ik}
+    \subitem {InverseKinematics}, \hyperpage{13}
 
   \indexspace
 
   \item {TEST}
-    \subitem {code\_test.cpp}, \hyperpage{21, 22}
-  \item {test/CMakeLists.txt}, \hyperpage{13}
-  \item {test/code\_test.cpp}, \hyperpage{20}
-  \item {test/main.cpp}, \hyperpage{16}
+    \subitem {code\_test.cpp}, \hyperpage{28, 29}
+  \item {test/CMakeLists.txt}, \hyperpage{17}
+  \item {test/code\_test.cpp}, \hyperpage{27}
+  \item {test/main.cpp}, \hyperpage{21}
 
 \end{theindex}
