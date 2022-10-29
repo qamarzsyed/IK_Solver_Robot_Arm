@@ -21,7 +21,7 @@ using std::endl;
 using std::vector;
 
 /**
- * @brief Main Function
+ * @brief Main Function that calculates the inverse kinematics solution, verifies it by performing forward kinematics and simulates the robot trajectory
  *
  * @return int 0
  */
