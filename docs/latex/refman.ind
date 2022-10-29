@@ -1,96 +1,203 @@
 \begin{theindex}
 
+  \item {abc1}
+    \subitem {simulation}, \hyperpage{11}
+  \item {abc2}
+    \subitem {simulation}, \hyperpage{12}
+  \item {abc3}
+    \subitem {simulation}, \hyperpage{12}
+  \item {abc4}
+    \subitem {simulation}, \hyperpage{12}
+  \item {abc5}
+    \subitem {simulation}, \hyperpage{12}
+  \item {abc6}
+    \subitem {simulation}, \hyperpage{12}
   \item {add\_executable}
-    \subitem {CMakeLists.txt}, \hyperpage{17}
-  \item {app/CMakeLists.txt}, \hyperpage{17}
-  \item {app/forward\_kinematics.cpp}, \hyperpage{18}
-  \item {app/inverse\_kinematics.cpp}, \hyperpage{19}
-  \item {app/main.cpp}, \hyperpage{19}
-  \item {app/robot\_parameters.cpp}, \hyperpage{22}
+    \subitem {CMakeLists.txt}, \hyperpage{25}
+  \item {app/CMakeLists.txt}, \hyperpage{25}
+  \item {app/forward\_kinematics.cpp}, \hyperpage{26}
+  \item {app/inverse\_kinematics.cpp}, \hyperpage{27}
+  \item {app/main.cpp}, \hyperpage{27}
+  \item {app/robot\_parameters.cpp}, \hyperpage{30}
+  \item {app/simulation.py}, \hyperpage{31}
 
   \indexspace
 
   \item {calculate\_TF}
-    \subitem {ForwardKinematics}, \hyperpage{10}
+    \subitem {ForwardKinematics}, \hyperpage{18}
+  \item {category}
+    \subitem {simulation}, \hyperpage{12}
   \item {CMakeLists.txt}
-    \subitem {add\_executable}, \hyperpage{17}
-    \subitem {set}, \hyperpage{17}
+    \subitem {add\_executable}, \hyperpage{25}
+    \subitem {find\_package}, \hyperpage{25}
+    \subitem {set}, \hyperpage{26}
   \item {code\_test.cpp}
-    \subitem {TEST}, \hyperpage{28, 29}
+    \subitem {TEST}, \hyperpage{37--39}
 
   \indexspace
 
-  \item {docs/introduction.txt}, \hyperpage{23}
+  \item {dh\_a}
+    \subitem {simulation}, \hyperpage{12}
+  \item {dh\_alpha}
+    \subitem {simulation}, \hyperpage{12}
+  \item {dh\_d}
+    \subitem {simulation}, \hyperpage{13}
+  \item {dh\_params}
+    \subitem {simulation}, \hyperpage{13}
+  \item {dh\_theta}
+    \subitem {simulation}, \hyperpage{13}
+  \item {docs/introduction.txt}, \hyperpage{32}
 
   \indexspace
 
-  \item {ForwardKinematics}, \hyperpage{9}
-    \subitem {calculate\_TF}, \hyperpage{10}
-    \subitem {solve\_fk}, \hyperpage{10}
+  \item {euler\_x}
+    \subitem {ForwardKinematics}, \hyperpage{19}
+  \item {euler\_y}
+    \subitem {ForwardKinematics}, \hyperpage{19}
+  \item {euler\_z}
+    \subitem {ForwardKinematics}, \hyperpage{19}
+
+  \indexspace
+
+  \item {find\_package}
+    \subitem {CMakeLists.txt}, \hyperpage{25}
+  \item {ForwardKinematics}, \hyperpage{17}
+    \subitem {calculate\_TF}, \hyperpage{18}
+    \subitem {euler\_x}, \hyperpage{19}
+    \subitem {euler\_y}, \hyperpage{19}
+    \subitem {euler\_z}, \hyperpage{19}
+    \subitem {solve\_fk}, \hyperpage{18}
+  \item {frame1}
+    \subitem {simulation}, \hyperpage{13}
+  \item {frame2}
+    \subitem {simulation}, \hyperpage{13}
+  \item {frame3}
+    \subitem {simulation}, \hyperpage{13}
+  \item {frame4}
+    \subitem {simulation}, \hyperpage{13}
+  \item {frame5}
+    \subitem {simulation}, \hyperpage{13}
+  \item {frame6}
+    \subitem {simulation}, \hyperpage{14}
+  \item {frames}
+    \subitem {simulation}, \hyperpage{14}
 
   \indexspace
 
   \item {get\_dh\_parameters}
-    \subitem {RobotParameters}, \hyperpage{14}
-  \item {get\_eff\_angles}
-    \subitem {InverseKinematics}, \hyperpage{12}
+    \subitem {RobotParameters}, \hyperpage{23}
   \item {get\_eff\_position}
-    \subitem {InverseKinematics}, \hyperpage{12}
+    \subitem {InverseKinematics}, \hyperpage{21}
+  \item {get\_eff\_rotation}
+    \subitem {InverseKinematics}, \hyperpage{21}
   \item {get\_robot\_angles}
-    \subitem {RobotParameters}, \hyperpage{14}
+    \subitem {RobotParameters}, \hyperpage{23}
 
   \indexspace
 
-  \item {include/forward\_kinematics.hpp}, \hyperpage{23}
-  \item {include/inverse\_kinematics.hpp}, \hyperpage{24}
-  \item {include/robot\_parameters.hpp}, \hyperpage{26}
-  \item {InverseKinematics}, \hyperpage{11}
-    \subitem {get\_eff\_angles}, \hyperpage{12}
-    \subitem {get\_eff\_position}, \hyperpage{12}
-    \subitem {InverseKinematics}, \hyperpage{12}
-    \subitem {set\_eff\_angles}, \hyperpage{12}
-    \subitem {set\_eff\_position}, \hyperpage{13}
-    \subitem {solve\_ik}, \hyperpage{13}
+  \item {include/forward\_kinematics.hpp}, \hyperpage{32}
+  \item {include/inverse\_kinematics.hpp}, \hyperpage{33}
+  \item {include/robot\_parameters.hpp}, \hyperpage{35}
+  \item {InverseKinematics}, \hyperpage{19}
+    \subitem {get\_eff\_position}, \hyperpage{21}
+    \subitem {get\_eff\_rotation}, \hyperpage{21}
+    \subitem {InverseKinematics}, \hyperpage{20}
+    \subitem {set\_eff\_position}, \hyperpage{21}
+    \subitem {set\_eff\_rotation}, \hyperpage{21}
+    \subitem {solve\_ik}, \hyperpage{22}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{20, 21}
+    \subitem {main.cpp}, \hyperpage{29, 30}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{20, 21}
+    \subitem {main}, \hyperpage{29, 30}
+  \item {motion}
+    \subitem {simulation}, \hyperpage{14}
 
   \indexspace
 
+  \item {robot}
+    \subitem {simulation}, \hyperpage{14}
   \item {robot\_name}
-    \subitem {RobotParameters}, \hyperpage{15}
-  \item {RobotParameters}, \hyperpage{13}
-    \subitem {get\_dh\_parameters}, \hyperpage{14}
-    \subitem {get\_robot\_angles}, \hyperpage{14}
-    \subitem {robot\_name}, \hyperpage{15}
-    \subitem {RobotParameters}, \hyperpage{14}
-    \subitem {set\_robot\_angles}, \hyperpage{15}
+    \subitem {RobotParameters}, \hyperpage{24}
+  \item {RobotParameters}, \hyperpage{22}
+    \subitem {get\_dh\_parameters}, \hyperpage{23}
+    \subitem {get\_robot\_angles}, \hyperpage{23}
+    \subitem {robot\_name}, \hyperpage{24}
+    \subitem {RobotParameters}, \hyperpage{23}
+    \subitem {set\_dh\_parameters}, \hyperpage{24}
+    \subitem {set\_robot\_angles}, \hyperpage{24}
 
   \indexspace
 
   \item {set}
-    \subitem {CMakeLists.txt}, \hyperpage{17}
-  \item {set\_eff\_angles}
-    \subitem {InverseKinematics}, \hyperpage{12}
+    \subitem {CMakeLists.txt}, \hyperpage{26}
+  \item {set\_dh\_parameters}
+    \subitem {RobotParameters}, \hyperpage{24}
   \item {set\_eff\_position}
-    \subitem {InverseKinematics}, \hyperpage{13}
+    \subitem {InverseKinematics}, \hyperpage{21}
+  \item {set\_eff\_rotation}
+    \subitem {InverseKinematics}, \hyperpage{21}
   \item {set\_robot\_angles}
-    \subitem {RobotParameters}, \hyperpage{15}
+    \subitem {RobotParameters}, \hyperpage{24}
+  \item {simulation}, \hyperpage{11}
+    \subitem {abc1}, \hyperpage{11}
+    \subitem {abc2}, \hyperpage{12}
+    \subitem {abc3}, \hyperpage{12}
+    \subitem {abc4}, \hyperpage{12}
+    \subitem {abc5}, \hyperpage{12}
+    \subitem {abc6}, \hyperpage{12}
+    \subitem {category}, \hyperpage{12}
+    \subitem {dh\_a}, \hyperpage{12}
+    \subitem {dh\_alpha}, \hyperpage{12}
+    \subitem {dh\_d}, \hyperpage{13}
+    \subitem {dh\_params}, \hyperpage{13}
+    \subitem {dh\_theta}, \hyperpage{13}
+    \subitem {frame1}, \hyperpage{13}
+    \subitem {frame2}, \hyperpage{13}
+    \subitem {frame3}, \hyperpage{13}
+    \subitem {frame4}, \hyperpage{13}
+    \subitem {frame5}, \hyperpage{13}
+    \subitem {frame6}, \hyperpage{14}
+    \subitem {frames}, \hyperpage{14}
+    \subitem {motion}, \hyperpage{14}
+    \subitem {robot}, \hyperpage{14}
+    \subitem {trajectory}, \hyperpage{14}
+    \subitem {xyz1}, \hyperpage{14}
+    \subitem {xyz2}, \hyperpage{14}
+    \subitem {xyz3}, \hyperpage{14}
+    \subitem {xyz4}, \hyperpage{15}
+    \subitem {xyz5}, \hyperpage{15}
+    \subitem {xyz6}, \hyperpage{15}
   \item {solve\_fk}
-    \subitem {ForwardKinematics}, \hyperpage{10}
+    \subitem {ForwardKinematics}, \hyperpage{18}
   \item {solve\_ik}
-    \subitem {InverseKinematics}, \hyperpage{13}
+    \subitem {InverseKinematics}, \hyperpage{22}
 
   \indexspace
 
   \item {TEST}
-    \subitem {code\_test.cpp}, \hyperpage{28, 29}
-  \item {test/CMakeLists.txt}, \hyperpage{17}
-  \item {test/code\_test.cpp}, \hyperpage{27}
-  \item {test/main.cpp}, \hyperpage{21}
+    \subitem {code\_test.cpp}, \hyperpage{37--39}
+  \item {test/CMakeLists.txt}, \hyperpage{25}
+  \item {test/code\_test.cpp}, \hyperpage{36}
+  \item {test/main.cpp}, \hyperpage{29}
+  \item {trajectory}
+    \subitem {simulation}, \hyperpage{14}
+
+  \indexspace
+
+  \item {xyz1}
+    \subitem {simulation}, \hyperpage{14}
+  \item {xyz2}
+    \subitem {simulation}, \hyperpage{14}
+  \item {xyz3}
+    \subitem {simulation}, \hyperpage{14}
+  \item {xyz4}
+    \subitem {simulation}, \hyperpage{15}
+  \item {xyz5}
+    \subitem {simulation}, \hyperpage{15}
+  \item {xyz6}
+    \subitem {simulation}, \hyperpage{15}
 
 \end{theindex}

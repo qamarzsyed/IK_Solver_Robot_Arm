@@ -7,12 +7,12 @@ Program to perform unit testing.
 
 {\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}../include/forward\+\_\+kinematics.\+hpp\char`\"{}}\newline
-Include dependency graph for code\+\_\+test.\+cpp\+:
-\nopagebreak
+{\ttfamily \#include \char`\"{}../include/inverse\+\_\+kinematics.\+hpp\char`\"{}}\newline
+Include dependency graph for code\+\_\+test.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{code__test_8cpp__incl}
+\includegraphics[width=348pt]{code__test_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Functions}
@@ -27,7 +27,13 @@ Include dependency graph for code\+\_\+test.\+cpp\+:
 \mbox{\hyperlink{code__test_8cpp_a5fa3fbaef1b17ec27547c9fa9e05b063}{T\+E\+ST}} (Forward\+\_\+\+Kinematics, check\+\_\+calculate\+TF)
 \begin{DoxyCompactList}\small\item\em Construct a new T\+E\+ST to check the size of the DH transformation matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{code__test_8cpp_a122a3ddb4d778e988c24c79347c6f9a6}{T\+E\+ST}} (Forward\+\_\+\+Kinematics, check\+\_\+solvefk)
-\begin{DoxyCompactList}\small\item\em Construct a new T\+E\+ST to check the size of final homogeneous transformation matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a new T\+E\+ST to check the size of final homogeneous transformation matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{code__test_8cpp_a959dc11c1a9fef56ce77cc2ba6c658bc}{T\+E\+ST}} (Inverse\+\_\+\+Kinematics, Check\+\_\+solveik)
+\begin{DoxyCompactList}\small\item\em Construct a new T\+E\+ST to check the output of solve\+\_\+ik function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{code__test_8cpp_a55563c020d6aa1416fd49b5d140b7112}{T\+E\+ST}} (Inverse\+\_\+\+Kinematics, Check\+Set\+I\+K\+Angles)
+\begin{DoxyCompactList}\small\item\em Construct a new T\+E\+ST to check the size of end effector Rotation Matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{code__test_8cpp_a466027d96ac7a0e177d093809906102f}{T\+E\+ST}} (Inverse\+\_\+\+Kinematics, Check\+Set\+I\+K\+Position)
+\begin{DoxyCompactList}\small\item\em Construct a new test to check the size of end effector Position Vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -51,7 +57,7 @@ M\+IT License (c)
 \mbox{\Hypertarget{code__test_8cpp_a5fa3fbaef1b17ec27547c9fa9e05b063}\label{code__test_8cpp_a5fa3fbaef1b17ec27547c9fa9e05b063}} 
 \index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Forward\+\_\+\+Kinematics}]{,  }\item[{check\+\_\+calculate\+TF}]{ }\end{DoxyParamCaption})}
 
 
@@ -61,17 +67,47 @@ Construct a new T\+E\+ST to check the size of the DH transformation matrix.
 \mbox{\Hypertarget{code__test_8cpp_a122a3ddb4d778e988c24c79347c6f9a6}\label{code__test_8cpp_a122a3ddb4d778e988c24c79347c6f9a6}} 
 \index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Forward\+\_\+\+Kinematics}]{,  }\item[{check\+\_\+solvefk}]{ }\end{DoxyParamCaption})}
 
 
 
 Construct a new T\+E\+ST to check the size of final homogeneous transformation matrix. 
 
+\mbox{\Hypertarget{code__test_8cpp_a959dc11c1a9fef56ce77cc2ba6c658bc}\label{code__test_8cpp_a959dc11c1a9fef56ce77cc2ba6c658bc}} 
+\index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Inverse\+\_\+\+Kinematics}]{,  }\item[{Check\+\_\+solveik}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new T\+E\+ST to check the output of solve\+\_\+ik function. 
+
+\mbox{\Hypertarget{code__test_8cpp_a55563c020d6aa1416fd49b5d140b7112}\label{code__test_8cpp_a55563c020d6aa1416fd49b5d140b7112}} 
+\index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Inverse\+\_\+\+Kinematics}]{,  }\item[{Check\+Set\+I\+K\+Angles}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new T\+E\+ST to check the size of end effector Rotation Matrix. 
+
+\mbox{\Hypertarget{code__test_8cpp_a466027d96ac7a0e177d093809906102f}\label{code__test_8cpp_a466027d96ac7a0e177d093809906102f}} 
+\index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Inverse\+\_\+\+Kinematics}]{,  }\item[{Check\+Set\+I\+K\+Position}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new test to check the size of end effector Position Vector. 
+
 \mbox{\Hypertarget{code__test_8cpp_ab2544abed06081a3696bb1e9ce7be84a}\label{code__test_8cpp_ab2544abed06081a3696bb1e9ce7be84a}} 
 \index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Robot\+\_\+\+Parameters}]{,  }\item[{Check\+Angles}]{ }\end{DoxyParamCaption})}
 
 
@@ -81,7 +117,7 @@ Construct a new T\+E\+ST to check if the robot angles vector is empty.
 \mbox{\Hypertarget{code__test_8cpp_ad8a4b64e57649d84d1229cef68e36aa3}\label{code__test_8cpp_ad8a4b64e57649d84d1229cef68e36aa3}} 
 \index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Robot\+\_\+\+Parameters}]{,  }\item[{Check\+DH}]{ }\end{DoxyParamCaption})}
 
 
@@ -91,7 +127,7 @@ Construct a new T\+E\+ST to check the size of the DH Parameters matrix.
 \mbox{\Hypertarget{code__test_8cpp_a4d5b06021348a980e672f2732fe5b7ad}\label{code__test_8cpp_a4d5b06021348a980e672f2732fe5b7ad}} 
 \index{code\_test.cpp@{code\_test.cpp}!TEST@{TEST}}
 \index{TEST@{TEST}!code\_test.cpp@{code\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
 {\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Robot\+\_\+\+Parameters}]{,  }\item[{Check\+Set\+Angles}]{ }\end{DoxyParamCaption})}
 
 

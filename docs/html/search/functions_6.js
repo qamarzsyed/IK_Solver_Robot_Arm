@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['set_52',['set',['../test_2CMakeLists_8txt.html#a2db458b73d775b11c4da9526a63fae46',1,'CMakeLists.txt']]],
-  ['set_5fdh_5fparameters_53',['set_dh_parameters',['../classRobotParameters.html#ade1e572a8433b8414f136a8878f7180e',1,'RobotParameters']]],
-  ['set_5feff_5fposition_54',['set_eff_position',['../classInverseKinematics.html#a940872a45c207e265ab3bd6b21afeee2',1,'InverseKinematics']]],
-  ['set_5feff_5frotation_55',['set_eff_rotation',['../classInverseKinematics.html#a63f92686c248d8a27557bf3154ccc353',1,'InverseKinematics']]],
-  ['set_5frobot_5fangles_56',['set_robot_angles',['../classRobotParameters.html#a4dc006415a0527455a87716579aac758',1,'RobotParameters']]],
-  ['solve_5ffk_57',['solve_fk',['../classForwardKinematics.html#a36626df15b4587efafca874e95c6bb50',1,'ForwardKinematics']]],
-  ['solve_5fik_58',['solve_ik',['../classInverseKinematics.html#a1277b9abd7d801083906e20b0726f6cd',1,'InverseKinematics']]]
+  ['robotparameters_88',['RobotParameters',['../classRobotParameters.html#a24ae817bbfa7ea775c027aeb4817cfa3',1,'RobotParameters']]]
 ];

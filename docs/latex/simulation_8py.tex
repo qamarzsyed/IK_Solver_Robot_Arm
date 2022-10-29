@@ -1,0 +1,66 @@
+\hypertarget{simulation_8py}{}\doxysection{app/simulation.py File Reference}
+\label{simulation_8py}\index{app/simulation.py@{app/simulation.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesimulation}{simulation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesimulation_aecd8d465e9301f576acd70abecf8261d}{simulation.\+category}}
+\item 
+list \mbox{\hyperlink{namespacesimulation_abd34e9840d9339750ebf27d979876b67}{simulation.\+dh\+\_\+d}} = \mbox{[}0.\+25, 0.\+15, 0.\+2, 0, 0, 0.\+1\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacesimulation_ae1bb0898eeabef7e08ca39510571b0c2}{simulation.\+dh\+\_\+a}} = \mbox{[}0, 0, 0, 0, 0, 0\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacesimulation_adb62ad5d932645f557a9ae95d8c90677}{simulation.\+dh\+\_\+alpha}} = \mbox{[}-\/1.\+5708, 1.\+5708, 0, -\/1.\+5708, 1.\+5708, 0\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacesimulation_a03f97d4ab4c2f3be8caf7b73bd7549f0}{simulation.\+dh\+\_\+theta}} = \mbox{[}0, 0, 0, 0, 0, 0\mbox{]}
+\item 
+\mbox{\hyperlink{namespacesimulation_a6fd826a88cc86707715a9b1b3812b038}{simulation.\+dh\+\_\+params}} = np.\+stack((dh\+\_\+d,dh\+\_\+a,dh\+\_\+alpha,dh\+\_\+theta), axis=-\/1)
+\item 
+\mbox{\hyperlink{namespacesimulation_a11dbe1f7d2770d9278e44be495452f1c}{simulation.\+robot}} = Robot\+Serial(dh\+\_\+params)
+\item 
+\mbox{\hyperlink{namespacesimulation_a5266e1ff61a9a9963ee9709d4ed0ddc2}{simulation.\+abc1}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+266\mbox{]}, \mbox{[}0.\+031\mbox{]}, \mbox{[}0.\+304\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a7718b40630ef5c0e490e9f15b6cf4cc3}{simulation.\+abc2}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+232\mbox{]}, \mbox{[}0.\+192\mbox{]}, \mbox{[}0.\+357\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a77099fd3b12b2dca7e9b3fbd56a95b65}{simulation.\+abc3}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+076\mbox{]}, \mbox{[}0.\+225\mbox{]}, \mbox{[}0.\+461\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_afe065e20399bf295e9e18a07a26b10da}{simulation.\+abc4}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+014\mbox{]}, \mbox{[}0.\+262\mbox{]}, \mbox{[}0.\+262\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_aa8327e737ca0dd10925bf34d96419f33}{simulation.\+abc5}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+221\mbox{]}, \mbox{[}0.\+020\mbox{]}, \mbox{[}0.\+482\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a1ae8f81c81b3fc1ec4ff0f1a88e06426}{simulation.\+abc6}} = np.\+array(\mbox{[}\mbox{[}-\/0.\+266\mbox{]}, \mbox{[}0.\+031\mbox{]}, \mbox{[}0.\+304\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a4fa368c348ffbfc28b00408cf5f4ce3e}{simulation.\+xyz1}} = np.\+array(\mbox{[}-\/0.\+665994, 0.\+308907, 0.\+665997\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_afe654e2fb63860457b4fa2968a2d193a}{simulation.\+xyz2}} = np.\+array(\mbox{[}-\/0.\+71637, 0.\+398236, 0.\+71637\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a22afbab2bc2606442e4439ebe7cf9015}{simulation.\+xyz3}} = np.\+array(\mbox{[}0.\+0292315, 0.\+541703, 0.\+91522\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a285b8197c595dfad761c1bba13dc6586}{simulation.\+xyz4}} = np.\+array(\mbox{[}0.\+158575, 0.\+957389, 0.\+50314\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a450b1d33c1e24d0ebff6d848b9021b21}{simulation.\+xyz5}} = np.\+array(\mbox{[}-\/0.\+35985, 0.\+225772, 0.\+924447\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a1e1478db391084192e82d7ace6d88baf}{simulation.\+xyz6}} = np.\+array(\mbox{[}-\/0.\+666147, 0.\+308929, 0.\+666111\mbox{]})
+\item 
+\mbox{\hyperlink{namespacesimulation_a20d70bbb1718c948f50d6785703f6592}{simulation.\+frame1}} = Frame.\+from\+\_\+euler\+\_\+3(xyz1, abc1)
+\item 
+\mbox{\hyperlink{namespacesimulation_ad84c62b4acc005ea4d59222159305b4f}{simulation.\+frame2}} = Frame.\+from\+\_\+euler\+\_\+3(xyz2, abc2)
+\item 
+\mbox{\hyperlink{namespacesimulation_ab6d0d2ed2aab5255be25f07291e4adab}{simulation.\+frame3}} = Frame.\+from\+\_\+euler\+\_\+3(xyz3, abc3)
+\item 
+\mbox{\hyperlink{namespacesimulation_a91122df6f98ff5be84f25f1a2e621d7a}{simulation.\+frame4}} = Frame.\+from\+\_\+euler\+\_\+3(xyz4, abc4)
+\item 
+\mbox{\hyperlink{namespacesimulation_ac2242116737e6b81202625eba22e3ed5}{simulation.\+frame5}} = Frame.\+from\+\_\+euler\+\_\+3(xyz5, abc5)
+\item 
+\mbox{\hyperlink{namespacesimulation_abfcb0cb71952f90b4be230eb377d7889}{simulation.\+frame6}} = Frame.\+from\+\_\+euler\+\_\+3(xyz6, abc6)
+\item 
+list \mbox{\hyperlink{namespacesimulation_a4b3088193f6dff14c801f94d7c305a2c}{simulation.\+frames}} = \mbox{[}frame1, frame2, frame3, frame4, frame5, frame6\mbox{]}
+\item 
+\mbox{\hyperlink{namespacesimulation_ae456dabd0a524853c85dd928131b025a}{simulation.\+trajectory}} = Robot\+Trajectory(robot, frames)
+\item 
+\mbox{\hyperlink{namespacesimulation_addbf3c37a5a7b732bffd07dc5daccbb3}{simulation.\+motion}}
+\end{DoxyCompactItemize}
