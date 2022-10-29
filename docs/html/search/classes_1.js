@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['robotparameters_20',['RobotParameters',['../classRobotParameters.html',1,'']]]
+  ['inversekinematics_31',['InverseKinematics',['../classInverseKinematics.html',1,'']]]
 ];

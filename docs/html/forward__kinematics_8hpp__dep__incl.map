@@ -1,6 +1,8 @@
 <map id="include/forward_kinematics.hpp" name="include/forward_kinematics.hpp">
-<area shape="rect" id="node1" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="176,5,407,32"/>
+<area shape="rect" id="node1" title="Definition of Forward Kinematics class and Declaration of its Methods." alt="" coords="235,5,465,32"/>
 <area shape="rect" id="node2" href="$forward__kinematics_8cpp.html" title="Program to define the Methods of Forward Kinematics Class." alt="" coords="5,80,212,107"/>
-<area shape="rect" id="node3" href="$app_2main_8cpp.html" title="Program to execute the inverse kinematics and forward kinematics." alt="" coords="236,80,347,107"/>
-<area shape="rect" id="node4" href="$code__test_8cpp.html" title="Program to perform unit testing." alt="" coords="371,80,513,107"/>
+<area shape="rect" id="node3" href="$inverse__kinematics_8hpp.html" title=" " alt="" coords="236,80,464,107"/>
+<area shape="rect" id="node6" href="$code__test_8cpp.html" title="Program to perform unit testing." alt="" coords="489,80,630,107"/>
+<area shape="rect" id="node4" href="$inverse__kinematics_8cpp.html" title=" " alt="" coords="157,155,361,181"/>
+<area shape="rect" id="node5" href="$app_2main_8cpp.html" title="Program to execute the inverse kinematics and forward kinematics." alt="" coords="385,155,496,181"/>
 </map>

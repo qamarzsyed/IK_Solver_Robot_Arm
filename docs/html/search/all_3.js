@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['get_5fdh_5fparameters_7',['get_dh_parameters',['../classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6',1,'RobotParameters']]],
-  ['get_5frobot_5fangles_8',['get_robot_angles',['../classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631',1,'RobotParameters']]]
+  ['forward_5fkinematics_2ecpp_5',['forward_kinematics.cpp',['../forward__kinematics_8cpp.html',1,'']]],
+  ['forward_5fkinematics_2ehpp_6',['forward_kinematics.hpp',['../forward__kinematics_8hpp.html',1,'']]],
+  ['forwardkinematics_7',['ForwardKinematics',['../classForwardKinematics.html',1,'']]]
 ];

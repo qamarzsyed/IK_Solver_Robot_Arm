@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classRobotParameters.html" title="Definition of the Robot Parameter Class." alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node1" href="$classRobotParameters.html" title="Definition of the Robot Parameter Class." alt="" coords="5,31,140,57"/>
 <area shape="rect" id="node2" href="$classForwardKinematics.html" title="Definition of the Forward Kinematics Class." alt="" coords="188,5,335,32"/>
+<area shape="rect" id="node3" href="$classInverseKinematics.html" title="Definition of Inverse Kinematics Class." alt="" coords="190,56,333,83"/>
 </map>

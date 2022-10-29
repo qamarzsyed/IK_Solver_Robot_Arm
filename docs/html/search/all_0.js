@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add_5fexecutable_0',['add_executable',['../app_2CMakeLists_8txt.html#a1c44be8986cc10d562ce5762aba0025d',1,'CMakeLists.txt']]]
+  ['6_20dof_20manipulator_20_2d_20inverse_20kinematics_20solver_0',['6 DOF Manipulator - Inverse Kinematics Solver',['../index.html',1,'']]]
 ];
