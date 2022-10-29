@@ -30,10 +30,16 @@
 ## Submission
 - Project Proposal Video : https://drive.google.com/file/d/1DN1yFC1ftZCqTR0bdwy7rqwPNF0FwN4z/view?usp=sharing
 - Project Phase 1 Video : https://drive.google.com/file/d/1aRyd8k2F9J4Gdd8d-0GsCtbD0NMbCdna/view?usp=sharing
+- Project Phase 2 Video:
+
+## Simulation
+
+
 
 ## Dependencies
-- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) :The project includes the Eigen library for linear algebra operations.
-
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page): The project includes the Eigen library for linear algebra operations.
+- [Python](https://www.python.org/): The project includes python3 to facilitate visualization.
+- [Visual Kinematics](https://pypi.org/project/visual-kinematics/): The project uses visual kinematics from python to visualise robot trajectory.
 
 ## Compilation
 ```
@@ -63,9 +69,11 @@ make code_coverage
 Change to the `/app` directory, and run:
 ```
 cpplint main.cpp > ../results/cpplint_main.txt
+cpplint inverse_kinematics.cpp > ../results/cpplint_inverse_kinematics.txt
 cpplint forward_kinematics.cpp > ../results/cpplint_forward_kinematics.txt
 cpplint robot_parameters.cpp > ../results/cpplint_robot_parameters.txt
 cpplint ../test/code_test.cpp > ../results/cpplint_code_test.txt
+cpplint ../include/inverse_kinematics.hpp > ../results/cpplint_inverse_kinematics_hpp.txt
 cpplint ../include/forward_kinematics.hpp > ../results/cpplint_forward_kinematics_hpp.txt
 cpplint ../include/robot_parameters.hpp > ../results/cpplint_robot_parameters_hpp.txt
 ```
@@ -77,14 +85,14 @@ Change to the `root` directory, and run:
 cppcheck --enable=all --std=c++11 --force -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./include/Eigen/") > results/cppcheck.txt'
 ```
 
-## Valgrind
-```
-cd build
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./app/ik_solver args  > ../results/valgrind.txt 2>&1
-```
-
 ## Doxygen
-The procedure to create doxygen documents has been automated in the CMakeLists.text file
+
+The procedure to create doxygen documents has been automated in the CMakeLists.txt file.
+
+From the `root` directory run:
+```
+firefox docs/html/index.html
+```
 
 ## License
 
