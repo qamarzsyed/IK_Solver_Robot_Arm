@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef ROBOT_PARAMETERS_HPP_
-#define ROBOT_PARAMETERS_HPP_
+#ifndef INCLUDE_ROBOT_PARAMETERS_HPP_
+#define INCLUDE_ROBOT_PARAMETERS_HPP_
 
 #include <string>
 #include <vector>
@@ -61,4 +61,4 @@ class RobotParameters {
   void set_robot_angles(std::vector<double> robot_angles);
 };
 
-#endif  // ROBOT_PARAMETERS_HPP_
+#endif  // INCLUDE_ROBOT_PARAMETERS_HPP_
