@@ -6,7 +6,6 @@ add_executable(
     code_test.cpp
     ../app/robot_parameters.cpp
     ../app/forward_kinematics.cpp
-    ../app/inverse_kinematics.cpp
 )
 
 target_include_directories(code_test PUBLIC ../vendor/googletest/googletest/include 
