@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['main_16',['main',['../app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../test_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp']]],
-  ['main_2ecpp_17',['main.cpp',['../app_2main_8cpp.html',1,'(Global Namespace)'],['../test_2main_8cpp.html',1,'(Global Namespace)']]]
+  ['get_5fdh_5fparameters_31',['get_dh_parameters',['../classRobotParameters.html#a1de2462c0d8608c61cb28620cd52fdb6',1,'RobotParameters']]],
+  ['get_5feff_5fposition_32',['get_eff_position',['../classInverseKinematics.html#ae563bd5a75abc40dece585937b1cfd35',1,'InverseKinematics']]],
+  ['get_5feff_5frotation_33',['get_eff_rotation',['../classInverseKinematics.html#aae7a4ea662ab28996451e757f192406c',1,'InverseKinematics']]],
+  ['get_5frobot_5fangles_34',['get_robot_angles',['../classRobotParameters.html#abb23a98c3b54b0cf00c6ced44991e631',1,'RobotParameters']]]
 ];

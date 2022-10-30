@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef FORWARD_KINEMATICS_HPP_
-#define FORWARD_KINEMATICS_HPP_
+#ifndef INCLUDE_FORWARD_KINEMATICS_HPP_
+#define INCLUDE_FORWARD_KINEMATICS_HPP_
 
 #include "../include/robot_parameters.hpp"
 
@@ -39,4 +39,4 @@ class ForwardKinematics : public RobotParameters {
   Eigen::Matrix4d solve_fk(Eigen::MatrixXd _dh_matrix);
 };
 
-#endif  // FORWARD_KINEMATICS_HPP_
+#endif  // INCLUDE_FORWARD_KINEMATICS_HPP_

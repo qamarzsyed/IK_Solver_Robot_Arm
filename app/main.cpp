@@ -8,6 +8,7 @@
  * @copyright MIT License (c)
  *
  */
+#include <Python.h>
 #include <iostream>
 #include "../include/inverse_kinematics.hpp"
 
@@ -106,8 +107,20 @@ int main() {
     cout << "\nThe FK solution for position and rotation " << i + 1 << " is:\n"
          << endl;
     cout << f1.solve_fk(r1.get_dh_parameters()) << endl;
-    std::cout << "Euler X, Y and Z angles are " << f1.euler_x << " "
+    std::cout << "\nEuler X, Y and Z angles are " << f1.euler_x << " "
             << f1.euler_y << " " << f1.euler_z << std::endl;
   }
+
+  // The output values from the Forward Kinematics Solver function were manually
+  // entered into the Python file "simulation.py." The same python file is then
+  // executed bellow to visualize the trajectory.
+
+  char filename[] = "../app/simulation.py";
+  FILE *fp;
+  Py_Initialize();
+  fp = _Py_fopen(filename, "r");
+  PyRun_SimpleFile(fp, filename);
+  Py_Finalize();
+
   return 0;
 }

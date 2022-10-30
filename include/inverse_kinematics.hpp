@@ -10,9 +10,10 @@
  */
 // class to calculate inverse kinematics
 
-#ifndef INVERSE_KINEMATICS_HPP_
-#define INVERSE_KINEMATICS_HPP_
+#ifndef INCLUDE_INVERSE_KINEMATICS_HPP_
+#define INCLUDE_INVERSE_KINEMATICS_HPP_
 
+#include <vector>
 #include "../include/forward_kinematics.hpp"
 
 
@@ -64,4 +65,4 @@ class InverseKinematics : public RobotParameters {
   std::vector<double> solve_ik();
 };
 
-#endif  // INVERSE_KINEMATICS_HPP_
+#endif  // INCLUDE_INVERSE_KINEMATICS_HPP_

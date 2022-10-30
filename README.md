@@ -9,7 +9,7 @@
 ## Overview
 
 - The aim of this project is to design and develop an inverse kinematics solver for a 6-axis Manipulator at ACME Robotics.
-- This implementaion is based on the Kuka-KR 5 Manipulator, however it can provide a solution for any 6 axis             manipulator with a sperical wrist configuration. 
+- This implementaion is based on the Stanford Manipulator, however it can provide a solution for any 6 axis             manipulator with a sperical wrist configuration. 
 - Our software will compute and simulate a trajectory based on the path coordinates provided and will be integrated as a module into a future project over at ACME Robotics.
 
 ## Method
@@ -30,10 +30,19 @@
 ## Submission
 - Project Proposal Video : https://drive.google.com/file/d/1DN1yFC1ftZCqTR0bdwy7rqwPNF0FwN4z/view?usp=sharing
 - Project Phase 1 Video : https://drive.google.com/file/d/1aRyd8k2F9J4Gdd8d-0GsCtbD0NMbCdna/view?usp=sharing
+- Project Phase 2 Video: https://drive.google.com/file/d/1WV8cGuzLEd92AWJvN-RXEEN8LMusyU3g/view?usp=sharing
+
+## Activity Diagram
+
+![download](https://user-images.githubusercontent.com/61658557/198859132-304277c0-3869-4e58-b2ad-2e2a997445e8.png)
+
+## Simulation
+https://user-images.githubusercontent.com/61658557/198859063-aac8badf-7833-4e12-8c2e-7469929b49fd.mp4
 
 ## Dependencies
-- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) :The project includes the Eigen library for linear algebra operations.
-
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page): The project includes the Eigen library for linear algebra operations.
+- [Python](https://www.python.org/): The project includes python3 to facilitate visualization.
+- [Visual Kinematics](https://pypi.org/project/visual-kinematics/): The project uses visual kinematics from python to visualise robot trajectory.
 
 ## Compilation
 ```
@@ -63,9 +72,11 @@ make code_coverage
 Change to the `/app` directory, and run:
 ```
 cpplint main.cpp > ../results/cpplint_main.txt
+cpplint inverse_kinematics.cpp > ../results/cpplint_inverse_kinematics.txt
 cpplint forward_kinematics.cpp > ../results/cpplint_forward_kinematics.txt
 cpplint robot_parameters.cpp > ../results/cpplint_robot_parameters.txt
 cpplint ../test/code_test.cpp > ../results/cpplint_code_test.txt
+cpplint ../include/inverse_kinematics.hpp > ../results/cpplint_inverse_kinematics_hpp.txt
 cpplint ../include/forward_kinematics.hpp > ../results/cpplint_forward_kinematics_hpp.txt
 cpplint ../include/robot_parameters.hpp > ../results/cpplint_robot_parameters_hpp.txt
 ```
@@ -77,14 +88,20 @@ Change to the `root` directory, and run:
 cppcheck --enable=all --std=c++11 --force -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./include/Eigen/") > results/cppcheck.txt'
 ```
 
-## Valgrind
+## Doxygen
+
+The procedure to create doxygen documents has been automated in the CMakeLists.txt file.
+
+From the `root` directory run:
 ```
-cd build
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./app/ik_solver args  > ../results/valgrind.txt 2>&1
+firefox docs/html/index.html
 ```
 
-## Doxygen
-The procedure to create doxygen documents has been automated in the CMakeLists.text file
+## Reference
+
+[1] [Analytical Forward and Inverse Kinematics for Stanford Arm](https://www.youtube.com/watch?v=wNBM4EmRze8&ab_channel=EngineeringEducatorAcademy)
+
+[2] [Spong, M., Hutchinson, S., & Vidyasagar, M. (2005). Robot Modeling and Control. Wiley.](https://books.google.com/books?id=A0OXDwAAQBAJ)
 
 ## License
 
